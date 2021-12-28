@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 import "../mapStyle.css";
-import data from "../flare";
+import data from "../data";
 
 class Map extends Component {
   componentDidMount() {
@@ -19,13 +19,12 @@ class Map extends Component {
 
     let cluster = d3.cluster().size([360, width / 2 - 120]);
 
-    let self = this;
+    svg.call(zoom.transform, transform)
 
     let root = d3.hierarchy(data);
 
     cluster(root);
 
-    // let link = ...
     g
       .selectAll(".link")
       .data(root.descendants().slice(1))
@@ -98,3 +97,5 @@ class Map extends Component {
 }
 
 export default Map;
+
+// used this example: https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541-576

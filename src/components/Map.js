@@ -64,9 +64,25 @@ class Map extends Component {
       .attr("x", d => {
         return d.x < 180 === !d.children ? 6 : -6;
       })
+      .style("fill", function (d) {
+        if (d.data.base === "plants") {
+          return "green";
+        } else if (d.data.base === "animal") {
+          return "red";
+        } else if (d.data.base === "petrol-based") {
+          return "brown";
+        } else if (d.data.base === "microbial") {
+          return "blue";
+        } else if (d.data.base === "inorganic") {
+          return "orange";
+        } else if (d.data.base === "chemical compounds") {
+          return "purple";
+        }
+      })
       .style("text-anchor", d => {
         return d.x < 180 === !d.children ? "start" : "end";
       })
+
       .attr("transform", d => {
         return "rotate(" + (d.x < 180 ? d.x - 90 : d.x + 90) + ")";
       })

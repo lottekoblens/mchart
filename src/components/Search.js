@@ -10,13 +10,13 @@ function Search({ details }) {
     ingredient => {
       return (
         ingredient
-        .name
-        .toLowerCase()
-        .includes(searchField.toLowerCase()) ||
+          .name
+          .toLowerCase()
+          .includes(searchField.toLowerCase()) ||
         ingredient
-        .base
-        .toLowerCase()
-        .includes(searchField.toLowerCase())
+          .base
+          .toLowerCase()
+          .includes(searchField.toLowerCase())
       );
     }
   );
@@ -40,11 +40,11 @@ function Search({ details }) {
         <h2 className="f2">Search your course</h2>
       </div>
       <div className="pa2">
-        <input 
+        <input
           className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
-          type = "search" 
-          placeholder = "Search People" 
-          onChange = {() => handleChange}
+          type="search"
+          placeholder="Search People"
+          onChange={() => handleChange}
         />
       </div>
       {searchList()}

@@ -12,9 +12,9 @@ function App() {
       </header>
       <Legend />
       <Map />
-      <div className="tc bg-green ma0 pa4 min-vh-100">
+      {/* <div className="tc bg-green ma0 pa4 min-vh-100">
       <Search details={data}/>
-    </div>
+    </div> */}
     </div>
   );
 }

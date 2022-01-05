@@ -7,7 +7,7 @@ import useD3 from "../hooks/useD3.js";
 const height = 1000;
 const width = 1000;
 
-function Map2() {
+function Map() {
     const ref = useD3(
         (svg) => {
             let zoom = d3.zoom().on("zoom", () => {
@@ -69,17 +69,17 @@ function Map2() {
                 })
                 .style("fill", function (d) {
                     if (d.data.base === "plants") {
-                        return "#60cb86";
+                        return "#45a868";
                     } else if (d.data.base === "animal") {
-                        return "#ff817f";
+                        return "#de6a68";
                     } else if (d.data.base === "petrol-based") {
-                        return "#e2c7a4";
+                        return "#ccae87";
                     } else if (d.data.base === "microbial") {
                         return "#4583dc";
                     } else if (d.data.base === "inorganic") {
-                        return "#fdc0a2";
+                        return "#e0a080";
                     } else if (d.data.base === "chemical compounds") {
-                        return "#fcbdfc";
+                        return "#dea0de";
                     }
                 })
                 .style("text-anchor", d => {
@@ -118,6 +118,6 @@ function Map2() {
     );
 }
 
-export default Map2;
+export default Map;
 
 // used this example: https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541-576

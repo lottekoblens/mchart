@@ -1,5 +1,5 @@
 export default {
-    name: "Ingrediënten",
+    name: "ingrediënten",
     children: [
       {
         name: "polymers",

@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import * as d3 from "d3";
 import "../mapStyle.css";
 import data from "../data";
 import useD3 from "../hooks/useD3.js";
-
 
 const height = 1000;
 const width = 1000;
@@ -17,7 +16,6 @@ function Map2() {
 
             svg = d3.select("#map").call(zoom);
             
-
             let transform = d3.zoomIdentity.translate(width / 2, height / 2 + 20);
 
             let g = svg.append("g").attr("transform", transform);
@@ -71,17 +69,17 @@ function Map2() {
                 })
                 .style("fill", function (d) {
                     if (d.data.base === "plants") {
-                        return "green";
+                        return "#60cb86";
                     } else if (d.data.base === "animal") {
-                        return "red";
+                        return "#ff817f";
                     } else if (d.data.base === "petrol-based") {
-                        return "brown";
+                        return "#e2c7a4";
                     } else if (d.data.base === "microbial") {
-                        return "blue";
+                        return "#4583dc";
                     } else if (d.data.base === "inorganic") {
-                        return "orange";
+                        return "#fdc0a2";
                     } else if (d.data.base === "chemical compounds") {
-                        return "purple";
+                        return "#fcbdfc";
                     }
                 })
                 .style("text-anchor", d => {
@@ -111,8 +109,8 @@ function Map2() {
                 viewBox={`0 0 ${height} ${width}`}
                 style={{
                     height: "100%",
-                    marginRight: "0px",
-                    marginLeft: "0px",
+                    marginRight: "3vw",
+                    marginLeft: "3vw",
                 }}
             >
             </svg>

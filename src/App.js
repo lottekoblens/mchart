@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header>
-      <h1>Morphological chart 1</h1>
+      <h1>Morphological chart</h1>
       </header>
       <Legend />
       <Map />

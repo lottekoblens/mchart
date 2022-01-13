@@ -57,7 +57,8 @@ function Map() {
                 })
                 .attr("transform", d => {
                     return "translate(" + project(d.x, d.y) + ")";
-                });
+                })
+                .attr('data-class', d => { return d.data.name});
 
             node.append("circle").attr("r", 2.5);
 

@@ -187,9 +187,6 @@ export default {
         name: "plasticizers",
         functions: ["give flexibility to biopolymer recipes", "acts as a partial filler as well (in bioplastics, inks and paints"],
         children: [
-          {
-            name: "plasticizers",
-            children: [
               {
                 name: "poylols",
                 base: "animal",
@@ -280,8 +277,6 @@ export default {
                 origin: ["paraffine (petrol)"],
                 size: 2042
               }
-            ]
-          }
         ]
       },
       {

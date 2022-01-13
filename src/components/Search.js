@@ -44,7 +44,7 @@ function Search({ details }) {
           className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
           type="search"
           placeholder="Search People"
-          onChange={() => handleChange}
+          onChange= {handleChange}
         />
       </div>
       {searchList()}

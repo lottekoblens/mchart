@@ -4,7 +4,7 @@ This is a project for a digital version of a morphological chart. It makes it ea
 
 ## :bookmark_tabs:	 Table of Contents
 
-* [Installation]()
+* [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Resources]()
 * [License]()
 

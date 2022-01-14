@@ -16,7 +16,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -900)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#45a868");
     svg
       .append("text")
@@ -29,7 +29,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -750)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#de6a68");
     svg
       .append("text")
@@ -42,7 +42,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -580)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#ccae87");
     svg
       .append("text")
@@ -55,7 +55,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -420)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#4583dc");
     svg
       .append("text")
@@ -68,7 +68,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -280)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#e0a080");
     svg
       .append("text")
@@ -81,7 +81,7 @@ function NewLegend() {
       .append("circle")
       .attr("cx", -140)
       .attr("cy", 230)
-      .attr("r", 6)
+      .attr("r", 9)
       .style("fill", "#dea0de");
     svg
       .append("text")

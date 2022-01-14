@@ -29,4 +29,4 @@ After that you can run the project by simply typing this in your terminal:
 
 ## :page_with_curl: License
 
-Author: Lotte Koblens, license by [MIT]()
+Author: Lotte Koblens, license by [MIT](https://github.com/lottekoblens/mchart/blob/master/LICENSE)

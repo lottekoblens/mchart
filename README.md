@@ -7,9 +7,9 @@ This is a project for a digital version of a morphological chart.
 
 If you want to use this code you have to clone the repository by putting this in your terminal:
 
-``` git clone https://github.com/lottekoblens/frontend-applications.git ```
+``` git clone https://github.com/lottekoblens/mchart.git ```
 
-Then install everything with:
+Go to the folder of the project and hen install everything with:
 
 ``` npm install ```
 

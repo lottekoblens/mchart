@@ -6,7 +6,7 @@ This is a project for a digital version of a morphological chart. It makes it ea
 
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Resources](https://github.com/lottekoblens/mchart#mag_right-resources)
-* [License]()
+* [License](https://github.com/lottekoblens/mchart#page_with_curl-license)
 
 ## :wrench: Installation
 

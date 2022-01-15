@@ -1,25 +1,16 @@
-import React, { useState } from 'react';
-import Scroll from './Scroll';
-import SearchList from './SearchList';
+import React, { useState } from "react";
+import Scroll from "./X-Scroll";
+import SearchList from "./X-SearchList";
 
 function Search({ details }) {
-
   const [searchField, setSearchField] = useState("");
 
-  const filteredIngredients = details.children.filter(
-    ingredient => {
-      return (
-        ingredient
-          .name
-          .toLowerCase()
-          .includes(searchField.toLowerCase()) ||
-        ingredient
-          .base
-          .toLowerCase()
-          .includes(searchField.toLowerCase())
-      );
-    }
-  );
+  const filteredIngredients = details.children.filter((ingredient) => {
+    return (
+      ingredient.name.toLowerCase().includes(searchField.toLowerCase()) ||
+      ingredient.base.toLowerCase().includes(searchField.toLowerCase())
+    );
+  });
 
   const handleChange = (event) => {
     setSearchField(event.target.value);
@@ -44,7 +35,7 @@ function Search({ details }) {
           className="pa3 bb br3 grow b--none bg-lightest-blue ma3"
           type="search"
           placeholder="Search People"
-          onChange= {handleChange}
+          onChange={handleChange}
         />
       </div>
       {searchList()}

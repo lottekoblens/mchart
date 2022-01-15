@@ -1,8 +1,7 @@
 import Map from "./components/Map";
-import Legend from "./components/Legend";
-import Search from "./components/Search";
+import Search from "./components/X-Search";
 import data from "./data";
-import SearchPage from "./components/SearchPage";
+import SearchPage from "./components/X-SearchPage";
 import NewLegend from "./components/NewLegend";
 import NewSearch from "./components/NewSearch";
 

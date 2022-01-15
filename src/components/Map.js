@@ -9,6 +9,14 @@ const width = 1000;
 
 function Map() {
   const ref = useD3((svg) => {
+    let tooltip = d3
+      .select("body")
+      .append("div")
+      .attr("class", "my-tooltip") //add the tooltip class
+      .style("position", "absolute")
+      .style("z-index", "10")
+      .style("visibility", "hidden");
+
     let zoom = d3.zoom().on("zoom", () => {
       g.attr("transform", d3.event.transform);
     });
@@ -58,6 +66,24 @@ function Map() {
       })
       .attr("data-class", (d) => {
         return d.data.name;
+      })
+      .on("mouseover", function (d) {
+        let g = d3.select(this);
+        let info = g
+          .append("text")
+          .attr("class", "info")
+          .attr("x", 20)
+          .attr("y", 10)
+          .text(
+            d.data.name +
+              " base is: " +
+              d.data.base +
+              " and can be found in " +
+              d.data.origin
+          );
+      })
+      .on("mouseout", function () {
+        d3.select(this).select("text.info").remove();
       });
 
     node.append("circle").attr("r", 2.5);

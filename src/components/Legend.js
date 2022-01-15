@@ -1,15 +1,13 @@
 import React from "react";
 import * as d3 from "d3";
-import "../mapStyle.css";
+import "../style.scss";
 
 function Legend() {
-
-    return (
-        <div id="legend">
-            <img src="/legenda.png" ></img>
-        </div>
-    )
-
+  return (
+    <div id="legend">
+      <img src="/legenda.png"></img>
+    </div>
+  );
 }
 
 export default Legend;

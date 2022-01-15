@@ -1,6 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
-import "../mapStyle.css";
+import "../style.scss";
 import data from "../data";
 import useD3 from "../hooks/useD3.js";
 

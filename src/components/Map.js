@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as d3 from "d3";
 import "../style.scss";
 import data from "../data";
@@ -68,22 +68,24 @@ function Map() {
         return d.data.name;
       })
       .on("mouseover", function (d) {
-        let g = d3.select(this);
-        let info = g
-          .append("text")
-          .attr("class", "info")
-          .attr("x", 20)
-          .attr("y", 10)
-          .text(
-            d.data.name +
-              " base is: " +
-              d.data.base +
-              " and can be found in " +
-              d.data.origin
-          );
+        tooltip.text(
+          d.data.name +
+            " has a base of " +
+            d.data.base +
+            "." +
+            " It can be found in " +
+            d.data.origin +
+            "."
+        );
+        return tooltip.style("visibility", "visible");
+      })
+      .on("mousemove", function () {
+        return tooltip
+          .style("top", d3.event.pageY - 10 + "px")
+          .style("left", d3.event.pageX + 10 + "px");
       })
       .on("mouseout", function () {
-        d3.select(this).select("text.info").remove();
+        return tooltip.style("visibility", "hidden");
       });
 
     node.append("circle").attr("r", 2.5);

@@ -4,6 +4,7 @@ import data from "./data";
 import SearchPage from "./components/X-SearchPage";
 import NewLegend from "./components/NewLegend";
 import NewSearch from "./components/NewSearch";
+import ShowTooltip from "./components/ShowTooltip";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </div>
         <div className="searchField">
           <NewSearch />
+          <ShowTooltip />
         </div>
       </div>
       {/* <div className="tc bg-green ma0 pa4 min-vh-100">

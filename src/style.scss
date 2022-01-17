@@ -67,7 +67,7 @@ header {
 }
 
 .chart {
-  max-width: 50vw;
+  max-width: 60vw;
   max-height: 100vh;
 }
 
@@ -79,4 +79,16 @@ header {
   background-color: $primary-color;
   color: white;
   padding: 0.5em;
+  max-width: 23vw;
+}
+
+.new-tooltip {
+  margin-top: 2em;
+  width: 25vw;
+  height: 50vh;
+  background-color: $primary-color;
+  p {
+    color: white;
+    padding: 1em;
+  }
 }

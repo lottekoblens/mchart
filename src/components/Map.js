@@ -68,19 +68,32 @@ function Map({ searchKeyword }) {
         return d.data.name;
       })
       .on("mouseover", function (d) {
-        tooltip.text(
-          d.data.name +
-            " has a base of " +
-            d.data.base +
-            "." +
-            " It can be found in " +
-            d.data.origin +
-            "."
-        );
+        if (d.data.name === "Ingrediënten") {
+          tooltip.text(
+            "Find the ingredient you are looking for by using the search field or by finding out more information when you hover over it!"
+          );
+        } else if (d.data.functions === undefined) {
+          tooltip.text(
+            d.data.name +
+              " has a base of " +
+              d.data.base +
+              ".\n" +
+              " It can be found in " +
+              d.data.origin +
+              "."
+          );
+        } else {
+          tooltip.text(
+            "The categorie " +
+              d.data.name +
+              " has the following functions:  " +
+              d.data.functions
+          );
+        }
         return tooltip.style("visibility", "visible");
       })
       .on("mousemove", function () {
-        return tooltip.style("top", 36.5 + "%").style("left", 73 + "%");
+        return tooltip.style("top", 41 + "%").style("left", 73 + "%");
       })
       .on("mouseout", function () {
         return tooltip.style("visibility", "hidden");

@@ -7,7 +7,7 @@ function TrySearch({ searchData }) {
   };
 
   return (
-    <div className="App">
+    <div className="search">
       <label>Search</label>
       <input type="text" onChange={FilteredElements} />
     </div>

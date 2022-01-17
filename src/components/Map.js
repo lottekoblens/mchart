@@ -64,7 +64,7 @@ function Map() {
       .attr("transform", (d) => {
         return "translate(" + project(d.x, d.y) + ")";
       })
-      .attr("data-class", (d) => {
+      .attr("data-label", (d) => {
         return d.data.name;
       })
       .on("mouseover", function (d) {

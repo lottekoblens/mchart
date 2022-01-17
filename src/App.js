@@ -5,6 +5,7 @@ import SearchPage from "./components/X-SearchPage";
 import NewLegend from "./components/NewLegend";
 import NewSearch from "./components/NewSearch";
 import ShowTooltip from "./components/ShowTooltip";
+import TrySearch from "./components/TrySearch";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <NewLegend />
         </div>
         <div className="searchField">
-          <NewSearch />
+          {/* <NewSearch /> */}
+          <TrySearch />
           <ShowTooltip />
         </div>
       </div>

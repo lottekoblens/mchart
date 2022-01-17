@@ -1,7 +1,16 @@
 import React from "react";
-import { useState } from "react";
-import data from "../data";
 
 function TrySearch() {
-  return <input type="text"></input>;
+  const FilteredElements = (event) => {
+    console.log("hoi", event.target.value);
+  };
+
+  return (
+    <div className="App">
+      <label>Search</label>
+      <input type="text" onChange={FilteredElements} />
+    </div>
+  );
 }
+
+export default TrySearch;

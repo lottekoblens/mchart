@@ -4,7 +4,6 @@ function TrySearch({ searchData }) {
   const FilteredElements = (event) => {
     const setKeyword = event.target.value;
     searchData(setKeyword);
-    console.log(setKeyword);
   };
 
   return (

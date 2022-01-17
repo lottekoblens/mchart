@@ -1,9 +1,5 @@
 import Map from "./components/Map";
-import Search from "./components/X-Search";
-import data from "./data";
-import SearchPage from "./components/X-SearchPage";
 import NewLegend from "./components/NewLegend";
-import NewSearch from "./components/NewSearch";
 import ShowTooltip from "./components/ShowTooltip";
 import TrySearch from "./components/TrySearch";
 import { useState } from "react";
@@ -19,7 +15,7 @@ function App() {
 
   const handlechangeSearch = (keyword) => {
     setSearch(keyword); // set selection with the value of the radiobutton that is selected
-    console.log(search);
+    console.log(keyword);
   };
 
   return (

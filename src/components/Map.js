@@ -118,6 +118,7 @@ function Map({ searchKeyword }) {
       .text((d) => d.data.name);
 
     function highlightElement() {
+      console.log("test");
       d3.selectAll(".node")
         .filter((d) => {
           {
@@ -125,6 +126,7 @@ function Map({ searchKeyword }) {
               return true;
             }
           }
+          console.log(searchKeyword);
           return false;
         })
         .select("text")

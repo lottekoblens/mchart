@@ -7,7 +7,7 @@ import useD3 from "../hooks/useD3.js";
 const height = 1000;
 const width = 1000;
 
-function Map() {
+function Map({ searchKeyword }) {
   const ref = useD3((svg) => {
     let tooltip = d3
       .select("body")
@@ -116,6 +116,22 @@ function Map() {
         return "rotate(" + (d.x < 180 ? d.x - 90 : d.x + 90) + ")";
       })
       .text((d) => d.data.name);
+
+    function highlightElement() {
+      d3.selectAll(".node")
+        .filter((d) => {
+          {
+            if (d.data.name == searchKeyword) {
+              return true;
+            }
+          }
+          return false;
+        })
+        .select("text")
+        .style("fill", "black")
+        .style("font-size", "30px");
+    }
+    highlightElement();
 
     function project(x, y) {
       let angle = ((x - 90) / 180) * Math.PI,

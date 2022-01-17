@@ -1,8 +1,10 @@
 import React from "react";
 
-function TrySearch() {
+function TrySearch({ searchData }) {
   const FilteredElements = (event) => {
-    console.log("hoi", event.target.value);
+    const setKeyword = event.target.value;
+    searchData(setKeyword);
+    console.log(setKeyword);
   };
 
   return (

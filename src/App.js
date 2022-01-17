@@ -19,7 +19,6 @@ function App() {
           <NewLegend />
         </div>
         <div className="searchField">
-          {/* <NewSearch /> */}
           <TrySearch />
           <ShowTooltip />
         </div>

@@ -93,7 +93,7 @@ function Map({ searchKeyword }) {
         return tooltip.style("visibility", "visible");
       })
       .on("mousemove", function () {
-        return tooltip.style("top", 41 + "%").style("left", 73 + "%");
+        return tooltip.style("top", 41 + "%").style("left", 72 + "%");
       })
       .on("mouseout", function () {
         return tooltip.style("visibility", "hidden");

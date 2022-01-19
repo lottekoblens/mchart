@@ -117,8 +117,10 @@ function Map({ searchKeyword }) {
 
         if (d.data.origin != null) {
           d3.select("#origin").text("Origin: " + `${d.data.origin}`);
+          d3.select("#base").text("Base: " + `${d.data.base}`);
         } else {
           d3.select("#origin").text(" ");
+          d3.select("#base").text(" ");
         }
 
         if (d.data.functions != null) {
@@ -223,6 +225,7 @@ function Map({ searchKeyword }) {
         <div className="infoitem">
           <h3 id="name">Select ingredient for more information</h3>
           <p id="origin"></p>
+          <p id="base"></p>
           <p id="functions"></p>
         </div>
         <div id="example"></div>

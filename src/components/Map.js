@@ -221,7 +221,7 @@ function Map({ searchKeyword }) {
       ></svg>
       <div className="container">
         <div className="infoitem">
-          <h3 id="name">Selecteer ingrediënt </h3>
+          <h3 id="name">Select ingredient for more information</h3>
           <p id="origin"></p>
           <p id="functions"></p>
         </div>

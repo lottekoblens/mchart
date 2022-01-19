@@ -22,6 +22,9 @@ header {
   }
   text {
     font-size: 14px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -66,7 +69,11 @@ header {
 
 .chart {
   max-width: 60vw;
-  max-height: 100vh;
+  max-height: 90vh;
+}
+
+#map {
+  min-width: 70vw;
 }
 
 .searchField {

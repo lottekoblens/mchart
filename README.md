@@ -14,6 +14,8 @@ For this project d3.js and React are used.
 
 ## :bulb: Concept
 
+The intention is that the user puts his recipe next to the website and can search for alternatives for ingredients of his recipe via the morphological chart. For example, to make his recipe completely vegetarian/vegan. The user can also develop a completely new recipe by using the morphological chart.
+
 ![Concept](https://github.com/lottekoblens/mchart/blob/master/public/concept.png)
 
 ## :file_folder: Data 

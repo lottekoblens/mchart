@@ -2,6 +2,8 @@
 
 This is a project for a digital version of a morphological chart. It makes it easier to find an alternative ingredient. 
 
+For this project d3.js and React are used.
+
 ## :bookmark_tabs:	 Table of Contents
 
 * [Concept](https://github.com/lottekoblens/mchart#bulb-concept)

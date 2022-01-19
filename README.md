@@ -4,9 +4,17 @@ This is a project for a digital version of a morphological chart. It makes it ea
 
 ## :bookmark_tabs:	 Table of Contents
 
+* [Concept]()
+* [Data]()
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Resources](https://github.com/lottekoblens/mchart#mag_right-resources)
 * [License](https://github.com/lottekoblens/mchart#page_with_curl-license)
+
+## Concept
+
+## Data 
+
+For this project we got data from an excel file. This file had to be changed to a usable file for d3.js and React. The file has therefore been converted to a javascript file consisting of children nested in other children. It can be found here.
 
 ## :wrench: Installation
 

@@ -5,7 +5,7 @@ This is a project for a digital version of a morphological chart. It makes it ea
 ## :bookmark_tabs:	 Table of Contents
 
 * [Concept](https://github.com/lottekoblens/mchart#bulb-concept)
-* [Data]()
+* [Data](https://github.com/lottekoblens/mchart#file_folder-data)
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Resources](https://github.com/lottekoblens/mchart#mag_right-resources)
 * [License](https://github.com/lottekoblens/mchart#page_with_curl-license)

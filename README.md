@@ -39,6 +39,7 @@ After that you can run the project by simply typing this in your terminal:
 * pjn98n7l5q. (2020, 30 januari). CodeSandbox. Geraadpleegd op 3 januari 2022, van https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541–576
 * Adhitama, P. (2021, 14 december). Simple Search-bar Component & Functionality in React. Medium. Geraadpleegd op 3 januari 2022, van https://medium.com/@pradityadhitama/simple-search-bar-component-functionality-in-react-6589fda3385d
 * Laurens technical support
+* React. (z.d.). Rendering Elements –. Geraadpleegd op 18 januari 2022, van https://reactjs.org/docs/rendering-elements.html
 * d3.js if else regex string match to change style. (2015, 25 juli). Stack Overflow. Geraadpleegd op 19 januari 2022, van https://stackoverflow.com/questions/31626939/d3-js-if-else-regex-string-match-to-change-style
 
 ## :page_with_curl: License

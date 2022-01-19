@@ -12,6 +12,8 @@ This is a project for a digital version of a morphological chart. It makes it ea
 
 ## :bulb: Concept
 
+![Concept](https://github.com/lottekoblens/mchart/blob/master/public/concept.png)
+
 ## :file_folder: Data 
 
 For this project we got data from an excel file. This file had to be changed to a usable file for d3.js and React. The file has therefore been converted to a javascript file consisting of children nested in other children. It can be found [here](https://github.com/lottekoblens/mchart/blob/master/src/data.js).

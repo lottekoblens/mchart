@@ -76,6 +76,7 @@ header {
     padding: 1em;
     border-radius: $border-radius;
     color: white;
+    min-width: 23vw;
 
     label {
       padding-right: 1em;
@@ -122,5 +123,39 @@ header {
   p {
     color: $primary-color;
     padding: 0 1em;
+  }
+}
+
+.search-animation {
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-3 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.infoitem {
+  margin-top: 2em;
+  width: 25vw;
+  height: 30vh;
+  background-color: white;
+  border-radius: $border-radius;
+  border: 0.1em solid $primary-color;
+  color: $primary-color;
+  position: absolute;
+  left: 71.5vw;
+  top: 37vh;
+  #name,
+  #origin,
+  #functions {
+    padding-left: 0.8em;
   }
 }

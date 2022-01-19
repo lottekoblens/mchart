@@ -24,7 +24,6 @@ function App() {
         </div>
         <div className="searchField">
           <TrySearch searchData={handlechangeSearch} />
-          <ShowTooltip />
         </div>
       </div>
     </div>

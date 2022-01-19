@@ -1,14 +1,13 @@
 import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import Map from "../components/Map";
-import App from "../App";
 
 function TrySearch({ searchData }) {
   let textInput = React.createRef();
   const FilteredElements = (event) => {
     console.log(textInput.current.value);
-    const setKeyword = textInput.current.value;
-    const newKeyword = setKeyword.toLowerCase();
+    const setKeyword = textInput.current.value.toLowerCase();
+    const newKeyword = setKeyword;
     searchData(newKeyword);
     ReactDOM.render(<Map />, document.getElementById("map"));
   };

@@ -8,11 +8,10 @@ const height = 1000;
 const width = 1000;
 
 function Map({ searchKeyword }) {
-  console.log("even testen", searchKeyword);
   const ref = useD3(
     (svg) => {
-      console.log("rendering component", searchKeyword);
       svg.select("g").remove();
+
       let tooltip = d3
         .select("body")
         .append("div")
@@ -74,34 +73,68 @@ function Map({ searchKeyword }) {
         .attr("data-label", (d) => {
           return d.data.name;
         })
-        .on("mouseover", function (d) {
-          if (d.data.name === "Ingrediënten") {
-            tooltip.text(
-              "Find the ingredient you are looking for by using the search field or by finding out more information when you hover over it!"
-            );
-          } else if (d.data.functions === undefined) {
-            tooltip.text(
-              d.data.name +
-                " has a base of " +
-                d.data.base +
-                ".\n" +
-                " It can be found in " +
-                d.data.origin +
-                "."
-            );
-          } else {
-            tooltip.text(
-              "The category is " +
-                d.data.name +
-                " and the ingredients in this categorie have the following functions:  " +
-                d.data.functions
-            );
-          }
-          return tooltip.style("visibility", "visible");
-        })
-        .on("mouseout", function () {
-          return tooltip.style("visibility", "hidden");
-        });
+        .on("click", click);
+      // .on("mouseover", function (d) {
+      //   if (d.data.name === "Ingrediënten") {
+      //     tooltip.text(
+      //       "Find the ingredient you are looking for by using the search field or by finding out more information when you hover over it!"
+      //     );
+      //   } else if (d.data.functions === undefined) {
+      //     tooltip.text(
+      //       d.data.name +
+      //         " has a base of " +
+      //         d.data.base +
+      //         ".\n" +
+      //         " It can be found in " +
+      //         d.data.origin +
+      //         "."
+      //     );
+      //   } else {
+      //     tooltip.text(
+      //       "The category is " +
+      //         d.data.name +
+      //         " and the ingredients in this categorie have the following functions:  " +
+      //         d.data.functions
+      //     );
+      //   }
+      //   return tooltip.style("visibility", "visible");
+      // })
+      // .on("mouseout", function () {
+      //   return tooltip.style("visibility", "hidden");
+      // })
+
+      function click(d) {
+        d3.select("#infoitem")
+          .transition()
+          .duration("50")
+          .attr("opacity", ".85")
+          .style("opacity", 1)
+          .style("top", function () {
+            return d.parent.x + "px";
+          });
+        // .style("left", d.x + "px")
+        d3.select("#name").text(`${d.data.name}`);
+
+        if (d.data.origin != null) {
+          d3.select("#origin").text("Origin: " + `${d.data.origin}`);
+        } else {
+          d3.select("#origin").text(" ");
+        }
+
+        if (d.data.functions != null) {
+          d3.select("#functions").text("Functions: " + `${d.data.functions}`);
+        } else if (d.data.children[0].functions != null) {
+          d3.select("#functions").text(
+            "Functions: " + `${d.data.children[0].functions}`
+          );
+        } else if (d.data.children[0].children[0].functions != null) {
+          d3.select("#functions").text(
+            "Functions: " + `${d.data.children[0].children[0].functions}`
+          );
+        } else {
+          d3.select("#functions").text(" ");
+        }
+      }
 
       node.append("circle").attr("r", 2.5);
 
@@ -145,8 +178,23 @@ function Map({ searchKeyword }) {
             return false;
           })
           .select("text")
-          .style("fill", "black")
-          .style("font-size", "30px");
+          .style("fill", function (d) {
+            if (d.data.base === "plants") {
+              return "#184a29";
+            } else if (d.data.base === "animal") {
+              return "#6e2826";
+            } else if (d.data.base === "petrol-based") {
+              return "#544632";
+            } else if (d.data.base === "microbial") {
+              return "#153259";
+            } else if (d.data.base === "inorganic") {
+              return "#6e442f";
+            } else if (d.data.base === "chemical compounds") {
+              return "#663f66";
+            }
+          })
+          .style("font-size", "20px")
+          .attr("class", "search-animation bounce-3");
       };
       highlightElement(searchKeyword);
 
@@ -171,6 +219,14 @@ function Map({ searchKeyword }) {
           marginLeft: "3vw",
         }}
       ></svg>
+      <div className="container">
+        <div className="infoitem">
+          <h3 id="name">Selecteer ingrediënt </h3>
+          <p id="origin"></p>
+          <p id="functions"></p>
+        </div>
+        <div id="example"></div>
+      </div>
     </>
   );
 }

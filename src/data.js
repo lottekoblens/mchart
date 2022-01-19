@@ -16,7 +16,7 @@ export default {
           name: "Polysaccharides",
           children: [
             {
-              name: "Cellulose",
+              name: "cellulose",
               base: "plants",
               origin: [
                 " cotton",
@@ -35,7 +35,7 @@ export default {
               size: 3938,
             },
             {
-              name: "Pectin",
+              name: "pectin",
               base: "plants",
               origin: [
                 "(peels of) apples",
@@ -56,13 +56,13 @@ export default {
               size: 3812,
             },
             {
-              name: "Hemi-cellulose",
+              name: "hemi-cellulose",
               base: "plants",
               origin: ["green beans", " rice straws"],
               size: 6714,
             },
             {
-              name: "Starches",
+              name: "starches",
               base: "plants",
               origin: [
                 "corn",
@@ -75,7 +75,7 @@ export default {
               size: 743,
             },
             {
-              name: "Lignin",
+              name: "lignin",
               base: "plants",
               origin: [
                 "wood",
@@ -94,19 +94,19 @@ export default {
               size: 743,
             },
             {
-              name: "Gums",
+              name: "gums",
               base: "plants",
               origin: ["gum arabic", " tara gum", " guar gum"],
               size: 743,
             },
             {
-              name: "Cellulose",
+              name: "cellulose",
               base: "microbial",
               origin: ["acetobacter xylinum (kombucha)", " mycelium"],
               size: 743,
             },
             {
-              name: "Gums (bacteria)",
+              name: "gums (bacteria)",
               base: "microbial",
               origin: [
                 "xanthan",
@@ -116,19 +116,19 @@ export default {
               size: 743,
             },
             {
-              name: "Gums (algea)",
+              name: "gums (algea)",
               base: "microbial",
               origin: ["alginate", " agar", " carrageenan"],
               size: 743,
             },
             {
-              name: "Fermented biomass",
+              name: "fermented biomass",
               base: "microbial",
               origin: ["PLA (corn)"],
               size: 743,
             },
             {
-              name: "Chemically modified cellulose",
+              name: "chemically modified cellulose",
               base: "chemical compounds",
               origin: [
                 "Carboxy Methyl Cellulose (CMC)",
@@ -139,40 +139,40 @@ export default {
           ],
         },
         {
-          name: "protein",
+          name: "Protein",
           children: [
             {
-              name: "Albumin",
+              name: "albumin",
               base: "animal",
               origin: ["blood", " beef", " eggs"],
               size: 3534,
             },
             {
-              name: "Silk",
+              name: "silk",
               base: "animal",
               origin: ["silk", " spider silk"],
               size: 5731,
             },
             {
-              name: "Keratin",
+              name: "keratin",
               base: "animal",
               origin: ["wool", " hair", " nails", " feathers", " fur"],
               size: 7840,
             },
             {
-              name: "Fibrin",
+              name: "fibrin",
               base: "animal",
               origin: ["protein found in blood"],
               size: 5914,
             },
             {
-              name: "Chitin (animal)",
+              name: "chitin (animal)",
               base: "animal",
               origin: ["exoskeletons of crustaceans", " crabs", " shrimps"],
               size: 3416,
             },
             {
-              name: "Collagen",
+              name: "collagen",
               base: "animal",
               origin: [
                 "gelatin",
@@ -181,13 +181,13 @@ export default {
               size: 3416,
             },
             {
-              name: "Casein",
+              name: "casein",
               base: "animal",
               origin: ["milk"],
               size: 3416,
             },
             {
-              name: "Gluten",
+              name: "gluten",
               base: "plants",
               origin: [
                 "wheat",
@@ -203,19 +203,19 @@ export default {
               size: 3416,
             },
             {
-              name: "Zein",
+              name: "zein",
               base: "plants",
               origin: ["corn"],
               size: 3416,
             },
             {
-              name: "Soy",
+              name: "soy",
               base: "plants",
               origin: ["soy beans"],
               size: 3416,
             },
             {
-              name: "Chitin (fungal)",
+              name: "chitin (fungal)",
               base: "plants",
               origin: ["fungal mycelium"],
               size: 3416,
@@ -226,13 +226,13 @@ export default {
           name: "Resins",
           children: [
             {
-              name: "Resin (animal)",
+              name: "resin (animal)",
               base: "animal",
               origin: ["shellac"],
               size: 7074,
             },
             {
-              name: "Resin (plant)",
+              name: "resin (plant)",
               base: "plants",
               origin: [
                 "copal",
@@ -253,13 +253,13 @@ export default {
           name: "Elastomers & rubbers",
           children: [
             {
-              name: "Elastomer (plant)",
+              name: "elastomer (plant)",
               base: "plants",
               origin: [],
               size: 7074,
             },
             {
-              name: "Elastomer (synthetic)",
+              name: "elastomer (synthetic)",
               base: "petrol-based",
               origin: ["synthetic latex"],
               size: 3416,
@@ -276,73 +276,73 @@ export default {
       ],
       children: [
         {
-          name: "Poylols",
+          name: "poylols",
           base: "animal",
           origin: ["animal glycerine (cow, sheep)"],
           size: 1983,
         },
         {
-          name: "Urea",
+          name: "urea",
           base: "animal",
           origin: ["urine"],
           size: 2047,
         },
         {
-          name: "Waxes",
+          name: "waxes",
           base: "animal",
           origin: ["bees wax"],
           size: 1375,
         },
         {
-          name: "Other",
+          name: "other",
           base: "animal",
           origin: ["honey"],
           size: 8746,
         },
         {
-          name: "Poylols",
+          name: "poylols",
           base: "plants",
           origin: ["vegetable glycerine (soy, palm, coconut)"],
           size: 2202,
         },
         {
-          name: "Lecithin",
+          name: "lecithin",
           base: "plants",
           origin: ["soy"],
           size: 1382,
         },
         {
-          name: "Waxes",
+          name: "waxes",
           base: "plants",
           origin: ["candellila", " carnauba"],
           size: 1629,
         },
         {
-          name: "Monosaccharides",
+          name: "monosaccharides",
           base: "plants",
           origin: ["glucose", " mannose", " fructose", " sucrose"],
           size: 1675,
         },
         {
-          name: "Vegetable oils",
+          name: "vegetable oils",
           base: "plants",
           origin: ["sunflower oil", " rice oil"],
           size: 2042,
         },
         {
-          name: "Poylols",
+          name: "poylols",
           base: "microbial",
           origin: ["microbial glycerine (yeast , algae)", " sugar alcohols"],
           size: 2042,
         },
         {
-          name: "Water",
+          name: "water",
           base: "inorganic",
           origin: ["water"],
           size: 2042,
         },
         {
-          name: "Poylols",
+          name: "poylols",
           base: "chemical compounds",
           origin: [
             "sorbitol",
@@ -354,19 +354,19 @@ export default {
           size: 2042,
         },
         {
-          name: "Surfactants",
+          name: "surfactants",
           base: "chemical compounds",
           origin: ["soap", " glycerol monostrearate"],
           size: 2042,
         },
         {
-          name: "Poylols",
+          name: "poylols",
           base: "petrol-based",
           origin: ["petroleum-based glycerine"],
           size: 2042,
         },
         {
-          name: "Waxes & paraffines",
+          name: "waxes & paraffines",
           base: "petrol-based",
           origin: ["paraffine (petrol)"],
           size: 2042,
@@ -380,7 +380,7 @@ export default {
       ],
       children: [
         {
-          name: "Animal",
+          name: "animal",
           base: "animal",
           origin: [
             "cochineal and lac insects",
@@ -393,7 +393,7 @@ export default {
           size: 1759,
         },
         {
-          name: "Tree (leaves, bark, seeds or fruits)",
+          name: "tree (leaves, bark, seeds or fruits)",
           base: "plants",
           origin: [
             "campeche",
@@ -414,7 +414,7 @@ export default {
           size: 2165,
         },
         {
-          name: "Plant",
+          name: "plant",
           base: "plants",
           origin: [
             "alkanet",
@@ -446,7 +446,7 @@ export default {
           size: 586,
         },
         {
-          name: "Fungi",
+          name: "fungi",
           base: "plants",
           origin: [
             "phaeolus schweinitzii",
@@ -467,7 +467,7 @@ export default {
           size: 3331,
         },
         {
-          name: "Micro-algae",
+          name: "micro-algae",
           base: "microbial",
           origin: [
             "chlorella",
@@ -480,7 +480,7 @@ export default {
           size: 772,
         },
         {
-          name: "Bacteria",
+          name: "bacteria",
           base: "microbial",
           origin: [
             "serratia marcescens",
@@ -500,25 +500,25 @@ export default {
           size: 3322,
         },
         {
-          name: "Fungi & yeast",
+          name: "fungi & yeast",
           base: "microbial",
           origin: ["monascus purpureus", " chlorociboria aeruginascens"],
           size: 772,
         },
         {
-          name: "Clays & earth",
+          name: "clays & earth",
           base: "inorganic",
           origin: ["ochre", " sienna", " umber", " green earth"],
           size: 772,
         },
         {
-          name: "Rocks",
+          name: "rocks",
           base: "inorganic",
           origin: ["lapis lazuli"],
           size: 772,
         },
         {
-          name: "Minerals",
+          name: "minerals",
           base: "inorganic",
           origin: ["vicenza earth", " azurite", " turkoise"],
           size: 772,
@@ -526,35 +526,35 @@ export default {
       ],
     },
     {
-      name: "PH modifiers",
+      name: "pH modifiers",
       functions: ["change the pH of a liquid"],
       children: [
         {
-          name: "Acidic",
+          name: "acidic",
           base: "plants",
           origin: ["hibiscus flowers", " fruit (lemon) juice"],
           size: 1759,
         },
         {
-          name: "Acidic",
+          name: "acidic",
           base: "microbial",
           origin: ["vinegar"],
           size: 2165,
         },
         {
-          name: "Alkaline",
+          name: "alkaline",
           base: "inorganic",
           origin: ["chalk", " slaked lime"],
           size: 586,
         },
         {
-          name: "Acidic",
+          name: "acidic",
           base: "inorganic",
           origin: ["alum"],
           size: 3331,
         },
         {
-          name: "Alkaline",
+          name: "alkaline",
           base: "chemical compounds",
           origin: [
             "sodium carbonate",
@@ -565,7 +565,7 @@ export default {
           size: 772,
         },
         {
-          name: "Acidic",
+          name: "acidic",
           base: "chemical compounds",
           origin: ["citric acid", " cream of tartar", " alum"],
           size: 3322,
@@ -580,19 +580,19 @@ export default {
       ],
       children: [
         {
-          name: "Detergents",
+          name: "detergents",
           base: "chemical compounds",
           origin: ["hand soap", " dishwashing soap"],
           size: 1759,
         },
         {
-          name: "Alcohols",
+          name: "alcohols",
           base: "chemical compounds",
           origin: ["methylated spirit"],
           size: 2165,
         },
         {
-          name: "Monoglycerides",
+          name: "monoglycerides",
           base: "chemical compounds",
           origin: ["glycerol monostearate"],
           size: 586,
@@ -607,19 +607,19 @@ export default {
       ],
       children: [
         {
-          name: "Animal",
+          name: "animal",
           base: "animal",
           origin: ["egg shells", " hair", " fur", " feathers", " bones"],
           size: 8833,
         },
         {
-          name: "Plants",
+          name: "plants",
           base: "plants",
           origin: ["stems", " leaves", " sawdust", " glycerine"],
           size: 1732,
         },
         {
-          name: "Powders",
+          name: "powders",
           base: "inorganic",
           origin: ["calcium carbonate", " activated coal"],
           size: 3623,
@@ -631,37 +631,37 @@ export default {
       functions: ["dissolve or extract a substance into a liquid"],
       children: [
         {
-          name: "Oils",
+          name: "oils",
           base: "plants",
           origin: ["sunflower oil", " rice oil", " linseed oil"],
           size: 4116,
         },
         {
-          name: "Acidic solvent",
+          name: "acidic solvent",
           base: "microbial",
           origin: ["vinegar", " cleaning vinegar"],
           size: 4116,
         },
         {
-          name: "Water",
+          name: "water",
           base: "inorganic",
           origin: ["hot/cold rainwater", " distilled water", " tap water"],
           size: 4116,
         },
         {
-          name: "Acidic solvent",
+          name: "acidic solvent",
           base: "chemical compounds",
           origin: ["citric acid"],
           size: 4116,
         },
         {
-          name: "Alcohols",
+          name: "alcohols",
           base: "chemical compounds",
           origin: ["ethanol", " isopropyl alcohol", " diethyl ether"],
           size: 4116,
         },
         {
-          name: "Ketones",
+          name: "ketones",
           base: "chemical compounds",
           origin: ["aceton"],
           size: 4116,
@@ -673,25 +673,25 @@ export default {
       functions: ["attach pigment to fibre"],
       children: [
         {
-          name: "Tannins (animals)",
+          name: "tannins (animals)",
           base: "animal",
           origin: ["brains", " urine"],
           size: 1082,
         },
         {
-          name: "Binder (animal)",
+          name: "binder (animal)",
           base: "animal",
           origin: ["milk"],
           size: 1336,
         },
         {
-          name: "Reduction agent for indigo",
+          name: "reduction agent for indigo",
           base: "animal",
           origin: ["urine"],
           size: 319,
         },
         {
-          name: "Tannins (wood)",
+          name: "tannins (wood)",
           base: "plants",
           origin: [
             "oak bark",
@@ -704,7 +704,7 @@ export default {
           size: 10498,
         },
         {
-          name: "Tannins (plants)",
+          name: "tannins (plants)",
           base: "plants",
           origin: [
             "chestnuts",
@@ -722,13 +722,13 @@ export default {
           size: 2822,
         },
         {
-          name: "Binder (plants)",
+          name: "binder (plants)",
           base: "plants",
           origin: ["vegetable milk (e.g. soy milk, almond, oats)"],
           size: 9983,
         },
         {
-          name: "Mordant",
+          name: "mordant",
           base: "plants",
           origin: [
             "symplocos",
@@ -738,31 +738,31 @@ export default {
           size: 2213,
         },
         {
-          name: "Reduction & oxidation (redox for indigo dye)",
+          name: "reduction & oxidation (redox for indigo dye)",
           base: "plants",
           origin: ["wood ash lye"],
           size: 1681,
         },
         {
-          name: "Reduction & oxidation (redox for indigo dye)",
+          name: "reduction & oxidation (redox for indigo dye)",
           base: "microbial",
           origin: ["sugar", " yeast"],
           size: 1681,
         },
         {
-          name: "Mineral mordants",
+          name: "mineral mordants",
           base: "inorganic",
           origin: ["alum (potassium aluminium sulfate)"],
           size: 1681,
         },
         {
-          name: "Metal mordants",
+          name: "metal mordants",
           base: "inorganic",
           origin: ["copper (copper sulfate)", " iron (iron sulfate)"],
           size: 1681,
         },
         {
-          name: "Reduction & oxidation (redox for indigo dye)",
+          name: "reduction & oxidation (redox for indigo dye)",
           base: "inorganic",
           origin: [
             "sodium hydrosulphate",
@@ -772,7 +772,7 @@ export default {
           size: 1681,
         },
         {
-          name: "Chemical mordants",
+          name: "chemical mordants",
           base: "chemical compounds",
           origin: [
             "alum (alum, potassium aluminium sulfate dodecahydrate, alum potash)",
@@ -787,13 +787,13 @@ export default {
       functions: ["pH buffer (stabilizes pH)", "crosslinkers", "desinfectants"],
       children: [
         {
-          name: "PH buffers",
+          name: "pH buffers",
           base: "animal",
           origin: ["sea shells", " mussel shells", " egg shells"],
           size: 1616,
         },
         {
-          name: "Crosslinker",
+          name: "crosslinker",
           base: "plants",
           origin: [
             "lemon juice (for starches)",
@@ -802,25 +802,25 @@ export default {
           size: 1027,
         },
         {
-          name: "Crosslinker",
+          name: "crosslinker",
           base: "microbial",
           origin: ["vinegar (for starches)"],
           size: 3891,
         },
         {
-          name: "Desinfectant",
+          name: "desinfectant",
           base: "microbial",
           origin: ["denatured alcohol 70%"],
           size: 891,
         },
         {
-          name: "PH buffers",
+          name: "pH buffers",
           base: "inorganic",
           origin: ["chalk", " gypsum"],
           size: 2893,
         },
         {
-          name: "Crosslinker",
+          name: "crosslinker",
           base: "chemical compounds",
           origin: [
             "calcium chloride (for alginate)",
@@ -829,13 +829,13 @@ export default {
           size: 5103,
         },
         {
-          name: "PH buffers",
+          name: "pH buffers",
           base: "chemical compounds",
           origin: ["calcium carbonate", " calcium hydroxide"],
           size: 3677,
         },
         {
-          name: "Desinfectant",
+          name: "desinfectant",
           base: "chemical compounds",
           origin: ["hypocholorite bleach (10% solution)"],
           size: 781,
@@ -847,49 +847,49 @@ export default {
       functions: ["various functions in microbiological lab work"],
       children: [
         {
-          name: "Solidifying agent",
+          name: "solidifying agent",
           base: "animal",
           origin: ["gelatine"],
           size: 2105,
         },
         {
-          name: "Protein",
+          name: "protein",
           base: "animal",
           origin: ["peptone", " tryptone beef broth", " meat extract"],
           size: 1316,
         },
         {
-          name: "Carbon (sugars)",
+          name: "carbon (sugars)",
           base: "animal",
           origin: ["honey", " peptone"],
           size: 3151,
         },
         {
-          name: "PH buffer",
+          name: "pH buffer",
           base: "animal",
           origin: ["peptone"],
           size: 3770,
         },
         {
-          name: "Nitrogen",
+          name: "nitrogen",
           base: "animal",
           origin: ["peptone"],
           size: 2435,
         },
         {
-          name: "Sulfur",
+          name: "sulfur",
           base: "animal",
           origin: ["peptone"],
           size: 4839,
         },
         {
-          name: "Enzyme exciters (e.g. vitamin B)",
+          name: "enzyme exciters (e.g. vitamin B)",
           base: "animal",
           origin: ["beef extract", " meat extract"],
           size: 1756,
         },
         {
-          name: "Carbon (sugars)",
+          name: "carbon (sugars)",
           base: "plants",
           origin: [
             "malt extract",
@@ -907,43 +907,43 @@ export default {
           size: 4268,
         },
         {
-          name: "Protein",
+          name: "protein",
           base: "plants",
           origin: ["vegetable peptone"],
           size: 1821,
         },
         {
-          name: "PH buffer",
+          name: "pH buffer",
           base: "plants",
           origin: ["vegetable peptone"],
           size: 1821,
         },
         {
-          name: "Nitrogen",
+          name: "nitrogen",
           base: "plants",
           origin: ["vegetable peptone"],
           size: 1821,
         },
         {
-          name: "Sulfur",
+          name: "sulfur",
           base: "plants",
           origin: ["vegetable peptone"],
           size: 1821,
         },
         {
-          name: "Enzyme exciters (e.g. vitamin B)",
+          name: "enzyme exciters (e.g. vitamin B)",
           base: "microbial",
           origin: ["yeast"],
           size: 1821,
         },
         {
-          name: "Solidifying agent",
+          name: "solidifying agent",
           base: "microbial",
           origin: ["agar"],
           size: 1821,
         },
         {
-          name: "Isotonic agent",
+          name: "isotonic agent",
           base: "inorganic",
           origin: [
             "salt",
@@ -955,7 +955,7 @@ export default {
           size: 1821,
         },
         {
-          name: "PH modifier",
+          name: "pH modifier",
           base: "chemical compounds",
           origin: [
             "citric acid",

@@ -52,11 +52,6 @@ header {
   justify-content: end;
   margin: 1em;
   margin-top: 3em;
-  /* position: absolute;
-    margin: 2em;
-    max-width: 40%;
-    max-height: 10em; */
-
   img {
     max-width: 40vw;
     max-height: 12vh;
@@ -83,13 +78,25 @@ header {
     color: white;
 
     label {
-      padding-right: 0.5em;
+      padding-right: 1em;
       font-weight: bold;
     }
 
     input {
       border: 1px solid white;
-      width: 17em;
+      width: 12em;
+      margin-right: 1em;
+      padding: 0.5em;
+      border-radius: $border-radius;
+      color: $primary-color;
+    }
+    button {
+      border: none;
+      border-radius: $border-radius;
+      background-color: white;
+      padding: 0.5em;
+      color: $primary-color;
+      font-weight: bold;
     }
   }
 }
@@ -101,6 +108,8 @@ header {
   max-width: 23vw;
   border-radius: $border-radius;
   padding-bottom: 3em;
+  top: 41%;
+  left: 72%;
 }
 
 .new-tooltip {

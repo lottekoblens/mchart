@@ -6,12 +6,6 @@ import { useState } from "react";
 
 function App() {
   const [search, setSearch] = useState("");
-  // const handlechangeSearch = (keyword) => {
-  //   try {
-  //     setSearch(Search);
-  //   } catch (error) {}
-  // };
-  // handlechangeSearch("hellloooooo");
 
   const handlechangeSearch = (keyword) => {
     setSearch(keyword); // set selection with the value of the radiobutton that is selected

@@ -9,7 +9,6 @@ function App() {
 
   const handlechangeSearch = (keyword) => {
     setSearch(keyword); // set selection with the value of the radiobutton that is selected
-    console.log(keyword);
   };
 
   return (

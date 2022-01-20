@@ -5,7 +5,6 @@ import Map from "../components/Map";
 function TrySearch({ searchData }) {
   let textInput = React.createRef();
   const FilteredElements = (event) => {
-    console.log(textInput.current.value);
     const setKeyword = textInput.current.value.toLowerCase();
     const newKeyword = setKeyword;
     searchData(newKeyword);

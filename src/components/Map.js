@@ -10,34 +10,37 @@ const width = 1000;
 function Map({ searchKeyword }) {
   const ref = useD3(
     (svg) => {
-      svg.select("g").remove();
+      svg.select("g").remove(); // when svg rerenders the old g will be deleted
 
       let tooltip = d3
         .select("body")
-        .append("div")
+        .append("div") // create div for tooltip
         .attr("class", "my-tooltip") //add the tooltip class
         .style("position", "absolute")
         .style("z-index", "10")
         .style("visibility", "hidden")
         .text(
           "Search for an ingredient and hover over it to get more information."
-        );
+        ); // set default text for tooltip
 
       let zoom = d3.zoom().on("zoom", () => {
         g.attr("transform", d3.event.transform);
-      });
+      }); // create the option to zoom in and out on chart
 
       svg = d3.select("#map").call(zoom);
 
       let transform = d3.zoomIdentity.translate(width / 2, height / 2 + 20);
 
       let g = svg.append("g").attr("transform", transform);
+      // append g to the svg
 
       let cluster = d3.cluster().size([360, width / 2 - 120]);
+      // creates a new cluster layout with the right size
 
       svg.call(zoom.transform, transform);
 
       let root = d3.hierarchy(data);
+      // d3.hierarchy is a nested data structure representing the dendrogram (this makes it possible to use our data)
 
       cluster(root);
 
@@ -58,6 +61,7 @@ function Map({ searchKeyword }) {
             project(d.parent.x, d.parent.y)
           );
         });
+      // add paths to all g
 
       let node = g
         .selectAll(".node")
@@ -73,35 +77,7 @@ function Map({ searchKeyword }) {
         .attr("data-label", (d) => {
           return d.data.name;
         })
-        .on("click", click);
-      // .on("mouseover", function (d) {
-      //   if (d.data.name === "Ingrediënten") {
-      //     tooltip.text(
-      //       "Find the ingredient you are looking for by using the search field or by finding out more information when you hover over it!"
-      //     );
-      //   } else if (d.data.functions === undefined) {
-      //     tooltip.text(
-      //       d.data.name +
-      //         " has a base of " +
-      //         d.data.base +
-      //         ".\n" +
-      //         " It can be found in " +
-      //         d.data.origin +
-      //         "."
-      //     );
-      //   } else {
-      //     tooltip.text(
-      //       "The category is " +
-      //         d.data.name +
-      //         " and the ingredients in this categorie have the following functions:  " +
-      //         d.data.functions
-      //     );
-      //   }
-      //   return tooltip.style("visibility", "visible");
-      // })
-      // .on("mouseout", function () {
-      //   return tooltip.style("visibility", "hidden");
-      // })
+        .on("click", click); // when user clicks on text the function click will be called
 
       function click(d) {
         d3.select("#infoitem")
@@ -112,15 +88,16 @@ function Map({ searchKeyword }) {
           .style("top", function () {
             return d.parent.x + "px";
           });
-        // .style("left", d.x + "px")
-        d3.select("#name").text(`${d.data.name}`);
+        d3.select("#name").text(`${d.data.name}`); // add name to div name
 
         if (d.data.origin != null) {
           d3.select("#origin").text("Origin: " + `${d.data.origin}`);
           d3.select("#base").text("Base: " + `${d.data.base}`);
+          // if the origin is not equal to null then put text in the divs
         } else {
           d3.select("#origin").text(" ");
           d3.select("#base").text(" ");
+          // else there should be no text added to the divs
         }
 
         if (d.data.functions != null) {
@@ -170,33 +147,52 @@ function Map({ searchKeyword }) {
         .text((d) => d.data.name);
 
       const highlightElement = (keyword) => {
-        d3.selectAll(".node")
-          .filter((d) => {
-            {
-              if (d.data.name === keyword) {
-                return true;
-              }
-            }
-            return false;
-          })
-          .select("text")
-          .style("fill", function (d) {
-            if (d.data.base === "plants") {
-              return "#184a29";
-            } else if (d.data.base === "animal") {
-              return "#6e2826";
-            } else if (d.data.base === "petrol-based") {
-              return "#544632";
-            } else if (d.data.base === "microbial") {
-              return "#153259";
-            } else if (d.data.base === "inorganic") {
-              return "#6e442f";
-            } else if (d.data.base === "chemical compounds") {
-              return "#663f66";
-            }
-          })
-          .style("font-size", "20px")
-          .attr("class", "search-animation bounce-3");
+        if (typeof keyword !== "undefined" && keyword.length >= 3) {
+          let matching = d3.selectAll(".node").filter(function (d) {
+            return d.data.name.match(keyword);
+          });
+          console.info(matching._groups);
+
+          matching._groups.forEach((element) => {
+            console.info(element);
+
+            // let newMatch = matching._groups;
+            // let secondMatch = newMatch["0"];
+            // secondMatch.map((x) => {
+            //   const matcher = d3.select("g");
+            //   console.log(matcher);
+            // });
+            // let thirdMatch = secondMatch["0"];
+            // let finalMatch = thirdMatch.__data__.data.name;
+            d3.selectAll(element)
+              // .filter((d) => {
+              //   {
+              //     if (d.data.name === keyword) {
+              //       return true;
+              //     }
+              //   }
+              //   return false;
+              // })
+              .select("text")
+              .style("fill", function (d) {
+                if (d.data.base === "plants") {
+                  return "#184a29";
+                } else if (d.data.base === "animal") {
+                  return "#6e2826";
+                } else if (d.data.base === "petrol-based") {
+                  return "#544632";
+                } else if (d.data.base === "microbial") {
+                  return "#153259";
+                } else if (d.data.base === "inorganic") {
+                  return "#6e442f";
+                } else if (d.data.base === "chemical compounds") {
+                  return "#663f66";
+                }
+              })
+              .style("font-size", "20px")
+              .attr("class", "search-animation bounce-3");
+          });
+        }
       };
       highlightElement(searchKeyword);
 

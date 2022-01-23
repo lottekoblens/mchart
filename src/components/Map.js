@@ -116,7 +116,8 @@ function Map({ searchKeyword }) {
           d3.select('#functions').text(' ');
         } else {
           d3.select('#functions').text(' ');
-        }
+        } // because the data is structured in children and children within children the code above is necessary
+        // the code checks if there are functions defined or not and when they are defined then the text will be displayed
       }
 
       node
@@ -124,19 +125,45 @@ function Map({ searchKeyword }) {
         .attr('r', 3.5)
         .style('fill', function (d) {
           if (d.data.base === 'plants') {
-            return '#45a868';
+            return '#6aa66c';
           } else if (d.data.base === 'animal') {
-            return '#de6a68';
+            return '#d97074';
           } else if (d.data.base === 'petrol-based') {
-            return '#ccae87';
+            return '#4170b2';
           } else if (d.data.base === 'microbial') {
-            return '#4583dc';
+            return '#eeb59b';
           } else if (d.data.base === 'inorganic') {
-            return '#e0a080';
+            return '#6962d1';
           } else if (d.data.base === 'chemical compounds') {
-            return '#dea0de';
+            return '#d9b8d5';
           } else {
             return '#924c57';
+          } // based on the base of the ingredient the color of the circle will be set
+        })
+        .attr('r', function (d) {
+          if (typeof d.data.functions === 'undefined') {
+            return 3.5;
+          } else if (d.data.functions !== null) {
+            return 6;
+          } else if (
+            typeof d.data.children !== 'undefined' &&
+            d.data.children[0].functions !== null
+          ) {
+            return 6;
+          } else if (
+            typeof d.data.children[0] !== 'undefined' &&
+            d.data.children[0].children[0].functions !== null
+          ) {
+            return 6;
+          } else if (
+            d.data.functions === 'undefined' ||
+            d.data.children[0].functions === 'undefined' ||
+            d.data.children[0].children[0] === 'undefined' ||
+            d.data.functions === null
+          ) {
+            return 6;
+          } else {
+            return 3.5;
           }
         });
 
@@ -148,18 +175,18 @@ function Map({ searchKeyword }) {
         })
         .style('fill', function (d) {
           if (d.data.base === 'plants') {
-            return '#45a868';
+            return '#6aa66c';
           } else if (d.data.base === 'animal') {
-            return '#de6a68';
+            return '#d97074';
           } else if (d.data.base === 'petrol-based') {
-            return '#ccae87';
+            return '#4170b2';
           } else if (d.data.base === 'microbial') {
-            return '#4583dc';
+            return '#eeb59b';
           } else if (d.data.base === 'inorganic') {
-            return '#e0a080';
+            return '#6962d1';
           } else if (d.data.base === 'chemical compounds') {
-            return '#dea0de';
-          }
+            return '#d9b8d5';
+          } // based on the base of the ingredient the color of the text will be set
         })
         .style('text-anchor', (d) => {
           return d.x < 180 === !d.children ? 'start' : 'end';
@@ -167,36 +194,36 @@ function Map({ searchKeyword }) {
         .attr('transform', (d) => {
           return 'rotate(' + (d.x < 180 ? d.x - 90 : d.x + 90) + ')';
         })
-        .text((d) => d.data.name);
+        .text((d) => d.data.name); // the name of the ingredient or category will be displayed in the chart
 
       const highlightElement = (keyword) => {
         if (typeof keyword !== 'undefined' && keyword.length >= 2) {
           let matching = d3.selectAll('.node').filter(function (d) {
             return d.data.name.match(keyword);
-          });
-          console.info(matching._groups);
+          }); // when the users typed in a keyword in the search function then there will
+          // be looked if there is a name that matches the keyword or a name that matches it partly
 
           matching._groups.forEach((element) => {
             d3.selectAll(element)
               .select('text')
               .style('fill', function (d) {
                 if (d.data.base === 'plants') {
-                  return '#184a29';
+                  return '#3b633c';
                 } else if (d.data.base === 'animal') {
-                  return '#6e2826';
+                  return '#8a3d40';
                 } else if (d.data.base === 'petrol-based') {
-                  return '#544632';
+                  return '#264775';
                 } else if (d.data.base === 'microbial') {
-                  return '#153259';
+                  return '#ab7c67';
                 } else if (d.data.base === 'inorganic') {
-                  return '#6e442f';
+                  return '#443f8f';
                 } else if (d.data.base === 'chemical compounds') {
-                  return '#663f66';
+                  return '#8c6d89';
                 }
               })
               .style('font-size', '20px')
               .attr('class', 'search-animation bounce-3');
-          });
+          }); // for each element that matches the keyword the styling will change and the animation will be executed
         }
       };
       highlightElement(searchKeyword);
@@ -205,7 +232,7 @@ function Map({ searchKeyword }) {
         let angle = ((x - 90) / 180) * Math.PI,
           radius = y;
         return [radius * Math.cos(angle), radius * Math.sin(angle)];
-      }
+      } // gives elements the right angles
     },
     [searchKeyword]
   );
@@ -237,4 +264,4 @@ function Map({ searchKeyword }) {
 
 export default Map;
 
-// used this example: https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541-576
+// used this example for inspiration: https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541-576

@@ -96,11 +96,29 @@ function Map({ searchKeyword }) {
           d3.select('#link')
             .text('More information: ' + `${d.data.link}`)
             .on('click', function () {
+              d3.select('#link').append('class', 'clickable-link');
               window.open(d.data.link);
             });
           // if the link is not equal to null then put text in the divs
         } else {
           d3.select('#link').text(' ');
+        }
+
+        if (d.data.subcategory != null) {
+          d3.select('#category').text(
+            d.data.category + ' > ' + d.data.subcategory + ' > ' + d.data.base
+          );
+          d3.select('#catFunctions').text(
+            'Functions: ' + d.data.categoryFunctions
+          );
+        } else if (d.data.category != null) {
+          d3.select('#category').text(d.data.category + ' > ' + d.data.base);
+          d3.select('#catFunctions').text(
+            'Functions: ' + d.data.categoryFunctions
+          );
+        } else {
+          d3.select('#category').text(' ');
+          d3.select('#catFunctions').text(' ');
         }
 
         if (typeof d.data.functions === 'undefined') {
@@ -265,10 +283,13 @@ function Map({ searchKeyword }) {
       ></svg>
       <div className='container'>
         <div className='infoitem'>
-          <h3 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h3>
+          <h4 id='category'></h4>
+          <hr></hr>
+          <p id='catFunctions'></p>
+          <h2 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h2>
           <p id='origin'></p>
-          <p id='base'></p>
           <p id='link'></p>
+
           <p id='functions'></p>
         </div>
         <div id='example'></div>

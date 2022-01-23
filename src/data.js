@@ -33,6 +33,16 @@ export default {
                 ' most plants',
               ],
               link: 'https://nl.wikipedia.org/wiki/Cellulose',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3938,
             },
             {
@@ -55,6 +65,16 @@ export default {
                 ' grapes',
               ],
               link: 'https://en.wikipedia.org/wiki/Pectin',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3812,
             },
             {
@@ -62,6 +82,16 @@ export default {
               base: 'plants',
               origin: ['green beans', ' rice straws'],
               link: 'https://nl.wikipedia.org/wiki/Hemicellulose',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 6714,
             },
             {
@@ -76,6 +106,16 @@ export default {
                 ' cassava',
               ],
               link: 'https://en.wikipedia.org/wiki/Starch',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -96,6 +136,16 @@ export default {
                 ' alfalfa',
               ],
               link: 'https://en.wikipedia.org/wiki/Lignin',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -103,6 +153,16 @@ export default {
               base: 'plants',
               origin: ['gum arabic', ' tara gum', ' guar gum'],
               link: 'https://en.wikipedia.org/wiki/Gums',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -110,6 +170,16 @@ export default {
               base: 'microbial',
               origin: ['acetobacter xylinum (kombucha)', ' mycelium'],
               link: 'https://nl.wikipedia.org/wiki/Cellulose',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -121,6 +191,16 @@ export default {
                 ' bacterial alginate (azotobacter vinelandii',
               ],
               link: 'https://en.wikipedia.org/wiki/Gums',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -128,6 +208,16 @@ export default {
               base: 'microbial',
               origin: ['alginate', ' agar', ' carrageenan'],
               link: 'https://en.wikipedia.org/wiki/Gums',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -135,6 +225,16 @@ export default {
               base: 'microbial',
               origin: ['PLA (corn)'],
               link: 'empty',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
             {
@@ -145,6 +245,16 @@ export default {
                 ' Methyl Cellulose (MC)',
               ],
               link: 'https://nl.wikipedia.org/wiki/Cellulose',
+              category: 'polymers',
+              subcategory: 'polysaccharides',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 743,
             },
           ],
@@ -157,6 +267,16 @@ export default {
               base: 'animal',
               origin: ['blood', ' beef', ' eggs'],
               link: 'https://nl.wikipedia.org/wiki/Prote%C3%AFne',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3534,
             },
             {
@@ -164,6 +284,16 @@ export default {
               base: 'animal',
               origin: ['silk', ' spider silk'],
               link: 'https://en.wikipedia.org/wiki/Silk',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 5731,
             },
             {
@@ -171,6 +301,16 @@ export default {
               base: 'animal',
               origin: ['wool', ' hair', ' nails', ' feathers', ' fur'],
               link: 'https://en.wikipedia.org/wiki/Keratin',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 7840,
             },
             {
@@ -178,6 +318,16 @@ export default {
               base: 'animal',
               origin: ['protein found in blood'],
               link: 'https://en.wikipedia.org/wiki/Fibrin',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 5914,
             },
             {
@@ -185,6 +335,16 @@ export default {
               base: 'animal',
               origin: ['exoskeletons of crustaceans', ' crabs', ' shrimps'],
               link: 'https://en.wikipedia.org/wiki/Chitin',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -195,6 +355,16 @@ export default {
                 ' skin, bones and connective tissue of e.g.chicken, pig, fish, cow',
               ],
               link: 'https://nl.wikipedia.org/wiki/Collageen',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -202,6 +372,16 @@ export default {
               base: 'animal',
               origin: ['milk'],
               link: 'https://en.wikipedia.org/wiki/Casein',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -219,6 +399,16 @@ export default {
                 ' triticale',
               ],
               link: 'https://nl.wikipedia.org/wiki/Gluten',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -226,6 +416,16 @@ export default {
               base: 'plants',
               origin: ['corn'],
               link: 'https://en.wikipedia.org/wiki/Zein',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -233,6 +433,16 @@ export default {
               base: 'plants',
               origin: ['soy beans'],
               link: 'https://en.wikipedia.org/wiki/Soybean',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
             {
@@ -240,6 +450,16 @@ export default {
               base: 'plants',
               origin: ['fungal mycelium'],
               link: 'https://nl.wikipedia.org/wiki/Chitine',
+              category: 'polymers',
+              subcategory: 'protein',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
           ],
@@ -252,6 +472,16 @@ export default {
               base: 'animal',
               origin: ['shellac'],
               link: 'https://en.wikipedia.org/wiki/Resin',
+              category: 'polymers',
+              subcategory: 'resins',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 7074,
             },
             {
@@ -269,6 +499,16 @@ export default {
                 ' arabic gum',
               ],
               link: 'https://en.wikipedia.org/wiki/Resin',
+              category: 'polymers',
+              subcategory: 'resins',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
           ],
@@ -280,6 +520,16 @@ export default {
               name: 'elastomer (plant)',
               base: 'plants',
               link: 'https://en.wikipedia.org/wiki/Elastomer',
+              category: 'polymers',
+              subcategory: 'elastomers & rubbers',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 7074,
             },
             {
@@ -287,6 +537,16 @@ export default {
               base: 'petrol-based',
               origin: ['synthetic latex'],
               link: 'https://en.wikipedia.org/wiki/Elastomer',
+              category: 'polymers',
+              subcategory: 'elastomers & rubbers',
+              categoryFunctions: [
+                'give strength',
+                ' adhesion',
+                ' coating',
+                ' binder',
+                ' growth substrate',
+                ' enforcement or scaffold in composites',
+              ],
               size: 3416,
             },
           ],
@@ -297,7 +557,7 @@ export default {
       name: 'plasticizers',
       functions: [
         'give flexibility to biopolymer recipes',
-        ' acts as a partial filler as well (in bioplastics, inks and paints',
+        ' acts as a partial filler as well (in bioplastics, inks and paints)',
       ],
       children: [
         {
@@ -305,6 +565,11 @@ export default {
           base: 'animal',
           origin: ['animal glycerine (cow, sheep)'],
           link: 'empty',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 1983,
         },
         {
@@ -312,6 +577,11 @@ export default {
           base: 'animal',
           origin: ['urine'],
           link: 'https://en.wikipedia.org/wiki/Urea',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2047,
         },
         {
@@ -319,6 +589,11 @@ export default {
           base: 'animal',
           origin: ['bees wax'],
           link: 'https://en.wikipedia.org/wiki/Wax',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 1375,
         },
         {
@@ -326,6 +601,11 @@ export default {
           base: 'animal',
           origin: ['honey'],
           link: 'empty',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 8746,
         },
         {
@@ -333,6 +613,11 @@ export default {
           base: 'plants',
           origin: ['vegetable glycerine (soy, palm, coconut)'],
           link: 'empty',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2202,
         },
         {
@@ -340,13 +625,23 @@ export default {
           base: 'plants',
           origin: ['soy'],
           link: 'https://en.wikipedia.org/wiki/Lecithin',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 1382,
         },
         {
           name: 'waxes',
           base: 'plants',
           origin: ['candellila', ' carnauba'],
-          link: 'https://en.wikipedia.org/wiki/Wax ',
+          link: 'https://en.wikipedia.org/wiki/Wax',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 1629,
         },
         {
@@ -354,6 +649,11 @@ export default {
           base: 'plants',
           origin: ['glucose', ' mannose', ' fructose', ' sucrose'],
           link: 'https://en.wikipedia.org/wiki/Monosaccharide',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 1675,
         },
         {
@@ -361,12 +661,22 @@ export default {
           base: 'plants',
           origin: ['sunflower oil', ' rice oil'],
           link: 'https://en.wikipedia.org/wiki/Vegetable_oil',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
         {
           name: 'poylols',
           base: 'microbial',
           origin: ['microbial glycerine (yeast , algae)', ' sugar alcohols'],
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           link: 'empty',
           size: 2042,
         },
@@ -375,6 +685,11 @@ export default {
           base: 'inorganic',
           origin: ['water'],
           link: 'https://en.wikipedia.org/wiki/Water',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
         {
@@ -388,6 +703,11 @@ export default {
             ' propylene glycol',
           ],
           link: 'empty',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
         {
@@ -395,6 +715,11 @@ export default {
           base: 'chemical compounds',
           origin: ['soap', ' glycerol monostrearate'],
           link: 'https://en.wikipedia.org/wiki/Surfactant#:~:text=Surfactants%20are%20compounds%20that%20lower,%2C%20foaming%20agents%2C%20or%20dispersants.',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
         {
@@ -402,6 +727,11 @@ export default {
           base: 'petrol-based',
           origin: ['petroleum-based glycerine'],
           link: 'empty',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
         {
@@ -409,6 +739,11 @@ export default {
           base: 'petrol-based',
           origin: ['paraffine (petrol)'],
           link: 'https://en.wikipedia.org/wiki/Paraffin_wax',
+          category: 'plasticizers',
+          categoryFunctions: [
+            'give flexibility to biopolymer recipes',
+            ' acts as a partial filler as well (in bioplastics, inks and paints)',
+          ],
           size: 2042,
         },
       ],
@@ -431,6 +766,10 @@ export default {
             ' egg shells',
           ],
           link: 'https://en.wikipedia.org/wiki/Animal',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 1759,
         },
         {
@@ -453,6 +792,10 @@ export default {
             ' buckthorn (bark)',
           ],
           link: 'https://en.wikipedia.org/wiki/Plant',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 2165,
         },
         {
@@ -486,6 +829,10 @@ export default {
             ' greenweed',
           ],
           link: 'https://en.wikipedia.org/wiki/Plant',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 586,
         },
         {
@@ -508,6 +855,10 @@ export default {
             ' cortinarius marylandensis',
           ],
           link: 'https://en.wikipedia.org/wiki/Fungus',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 3331,
         },
         {
@@ -522,6 +873,10 @@ export default {
             ' dunaliella salina',
           ],
           link: 'https://en.wikipedia.org/wiki/Microalgae',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 772,
         },
         {
@@ -543,6 +898,10 @@ export default {
             ' allochromatum vinosum',
           ],
           link: 'https://en.wikipedia.org/wiki/Bacteria',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 3322,
         },
         {
@@ -550,6 +909,10 @@ export default {
           base: 'microbial',
           origin: ['monascus purpureus', ' chlorociboria aeruginascens'],
           link: 'empty',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 772,
         },
         {
@@ -557,6 +920,10 @@ export default {
           base: 'inorganic',
           origin: ['ochre', ' sienna', ' umber', ' green earth'],
           link: 'empty',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 772,
         },
         {
@@ -565,12 +932,20 @@ export default {
           origin: ['lapis lazuli'],
           link: 'empty',
           size: 772,
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
         },
         {
           name: 'minerals',
           base: 'inorganic',
           origin: ['vicenza earth', ' azurite', ' turkoise'],
           link: 'https://en.wikipedia.org/wiki/Mineral',
+          category: 'pigments',
+          categoryFunctions: [
+            'give color: note that everything that has pigment acts well as a dye',
+          ],
           size: 772,
         },
       ],
@@ -584,6 +959,8 @@ export default {
           base: 'plants',
           origin: ['hibiscus flowers', ' fruit (lemon) juice'],
           link: 'https://en.wikipedia.org/wiki/Acid',
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           size: 1759,
         },
         {
@@ -591,6 +968,8 @@ export default {
           base: 'microbial',
           origin: ['vinegar'],
           link: 'https://en.wikipedia.org/wiki/Acid',
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           size: 2165,
         },
         {
@@ -598,6 +977,8 @@ export default {
           base: 'inorganic',
           origin: ['chalk', ' slaked lime'],
           link: 'https://en.wikipedia.org/wiki/Alkali',
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           size: 586,
         },
         {
@@ -605,6 +986,8 @@ export default {
           base: 'inorganic',
           origin: ['alum'],
           link: 'https://en.wikipedia.org/wiki/Acid',
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           size: 3331,
         },
         {
@@ -617,12 +1000,16 @@ export default {
             ' ammonia',
           ],
           link: 'https://en.wikipedia.org/wiki/Alkali',
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           size: 772,
         },
         {
           name: 'acidic',
           base: 'chemical compounds',
           origin: ['citric acid', ' cream of tartar', ' alum'],
+          category: 'pH modifiers',
+          categoryFunctions: ['change the pH of a liquid'],
           link: 'https://en.wikipedia.org/wiki/Acid',
           size: 3322,
         },
@@ -640,6 +1027,11 @@ export default {
           base: 'chemical compounds',
           origin: ['hand soap', ' dishwashing soap'],
           link: 'https://en.wikipedia.org/wiki/Detergent',
+          category: 'surfactants',
+          categoryFunctions: [
+            'change surface tension between liquids',
+            ' emulsifying, foaming',
+          ],
           size: 1759,
         },
         {
@@ -647,6 +1039,11 @@ export default {
           base: 'chemical compounds',
           origin: ['methylated spirit'],
           link: 'https://en.wikipedia.org/wiki/Alcohol_(chemistry)',
+          category: 'surfactants',
+          categoryFunctions: [
+            'change surface tension between liquids',
+            ' emulsifying, foaming',
+          ],
           size: 2165,
         },
         {
@@ -654,6 +1051,11 @@ export default {
           base: 'chemical compounds',
           origin: ['glycerol monostearate'],
           link: 'https://en.wikipedia.org/wiki/Monoglyceride',
+          category: 'surfactants',
+          categoryFunctions: [
+            'change surface tension between liquids',
+            ' emulsifying, foaming',
+          ],
           size: 586,
         },
       ],
@@ -670,6 +1072,11 @@ export default {
           base: 'animal',
           origin: ['egg shells', ' hair', ' fur', ' feathers', ' bones'],
           link: 'empty',
+          category: 'fillers',
+          categoryFunctions: [
+            'give extra volume to biopolymers and composites',
+            ' reduces shrinkage',
+          ],
           size: 8833,
         },
         {
@@ -677,6 +1084,11 @@ export default {
           base: 'plants',
           origin: ['stems', ' leaves', ' sawdust', ' glycerine'],
           link: 'empty',
+          category: 'fillers',
+          categoryFunctions: [
+            'give extra volume to biopolymers and composites',
+            ' reduces shrinkage',
+          ],
           size: 1732,
         },
         {
@@ -684,6 +1096,11 @@ export default {
           base: 'inorganic',
           origin: ['calcium carbonate', ' activated coal'],
           link: 'https://en.wikipedia.org/wiki/Powder',
+          category: 'fillers',
+          categoryFunctions: [
+            'give extra volume to biopolymers and composites',
+            ' reduces shrinkage',
+          ],
           size: 3623,
         },
       ],
@@ -697,6 +1114,8 @@ export default {
           base: 'plants',
           origin: ['sunflower oil', ' rice oil', ' linseed oil'],
           link: 'https://en.wikipedia.org/wiki/Oil',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
         {
@@ -704,6 +1123,8 @@ export default {
           base: 'microbial',
           origin: ['vinegar', ' cleaning vinegar'],
           link: 'https://en.wikipedia.org/wiki/Solvent',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
         {
@@ -711,6 +1132,8 @@ export default {
           base: 'inorganic',
           origin: ['hot/cold rainwater', ' distilled water', ' tap water'],
           link: 'https://en.wikipedia.org/wiki/Water',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
         {
@@ -718,6 +1141,8 @@ export default {
           base: 'chemical compounds',
           origin: ['citric acid'],
           link: 'https://en.wikipedia.org/wiki/Solvent',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
         {
@@ -725,6 +1150,8 @@ export default {
           base: 'chemical compounds',
           origin: ['ethanol', ' isopropyl alcohol', ' diethyl ether'],
           link: 'https://en.wikipedia.org/wiki/Alcohol_(chemistry)',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
         {
@@ -732,6 +1159,8 @@ export default {
           base: 'chemical compounds',
           origin: ['aceton'],
           link: 'https://en.wikipedia.org/wiki/Ketosis',
+          category: 'solvents & vehicles',
+          categoryFunctions: ['dissolve or extract a substance into a liquid'],
           size: 4116,
         },
       ],
@@ -745,6 +1174,8 @@ export default {
           base: 'animal',
           origin: ['brains', ' urine'],
           link: 'https://en.wikipedia.org/wiki/Tannin',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1082,
         },
         {
@@ -752,6 +1183,8 @@ export default {
           base: 'animal',
           origin: ['milk'],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1336,
         },
         {
@@ -759,6 +1192,8 @@ export default {
           base: 'animal',
           origin: ['urine'],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 319,
         },
         {
@@ -773,6 +1208,8 @@ export default {
             ' quebracho',
           ],
           link: 'https://en.wikipedia.org/wiki/Tannin',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 10498,
         },
         {
@@ -792,6 +1229,8 @@ export default {
             ' rhubarb leaves',
           ],
           link: 'https://en.wikipedia.org/wiki/Tannin',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 2822,
         },
         {
@@ -799,6 +1238,8 @@ export default {
           base: 'plants',
           origin: ['vegetable milk (e.g. soy milk, almond, oats)'],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 9983,
         },
         {
@@ -810,6 +1251,8 @@ export default {
             ' rhubarb leaves (animal fibers - oxalic acid)',
           ],
           link: 'https://en.wikipedia.org/wiki/Mordant',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 2213,
         },
         {
@@ -817,6 +1260,8 @@ export default {
           base: 'plants',
           origin: ['wood ash lye'],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
         {
@@ -824,6 +1269,8 @@ export default {
           base: 'microbial',
           origin: ['sugar', ' yeast'],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
         {
@@ -831,6 +1278,8 @@ export default {
           base: 'inorganic',
           origin: ['alum (potassium aluminium sulfate)'],
           link: 'https://en.wikipedia.org/wiki/Mordant',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
         {
@@ -838,6 +1287,8 @@ export default {
           base: 'inorganic',
           origin: ['copper (copper sulfate)', ' iron (iron sulfate)'],
           link: 'https://en.wikipedia.org/wiki/Mordant ',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
         {
@@ -849,6 +1300,8 @@ export default {
             ' ferrous sulfate',
           ],
           link: 'empty',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
         {
@@ -859,6 +1312,8 @@ export default {
             ' aluminium acetate',
           ],
           link: 'https://en.wikipedia.org/wiki/Mordant',
+          category: 'mordants, tannins, binders, redox agents',
+          categoryFunctions: ['attach pigment to fibre'],
           size: 1681,
         },
       ],
@@ -872,6 +1327,12 @@ export default {
           base: 'animal',
           origin: ['sea shells', ' mussel shells', ' egg shells'],
           link: 'https://en.wikipedia.org/wiki/Buffer_solution',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 1616,
         },
         {
@@ -882,6 +1343,12 @@ export default {
             ' orange juice (for alginate)',
           ],
           link: 'https://en.wikipedia.org/wiki/Cross-link',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 1027,
         },
         {
@@ -889,6 +1356,12 @@ export default {
           base: 'microbial',
           origin: ['vinegar (for starches)'],
           link: 'https://en.wikipedia.org/wiki/Cross-link',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 3891,
         },
         {
@@ -896,6 +1369,12 @@ export default {
           base: 'microbial',
           origin: ['denatured alcohol 70%'],
           link: 'https://en.wikipedia.org/wiki/Disinfectant',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 891,
         },
         {
@@ -903,6 +1382,12 @@ export default {
           base: 'inorganic',
           origin: ['chalk', ' gypsum'],
           link: 'https://en.wikipedia.org/wiki/Buffer_solution',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 2893,
         },
         {
@@ -913,6 +1398,12 @@ export default {
             ' citric acid (for starches)',
           ],
           link: 'https://en.wikipedia.org/wiki/Cross-link',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 5103,
         },
         {
@@ -920,6 +1411,12 @@ export default {
           base: 'chemical compounds',
           origin: ['calcium carbonate', ' calcium hydroxide'],
           link: 'https://en.wikipedia.org/wiki/Buffer_solution',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 3677,
         },
         {
@@ -927,6 +1424,12 @@ export default {
           base: 'chemical compounds',
           origin: ['hypocholorite bleach (10% solution)'],
           link: 'https://en.wikipedia.org/wiki/Disinfectant',
+          category: 'miscellaneous',
+          categoryFunctions: [
+            'pH buffer (stabilizes pH)',
+            'crosslinkers',
+            'desinfectants',
+          ],
           size: 781,
         },
       ],
@@ -940,6 +1443,8 @@ export default {
           base: 'animal',
           origin: ['gelatine'],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 2105,
         },
         {
@@ -947,6 +1452,8 @@ export default {
           base: 'animal',
           origin: ['peptone', ' tryptone beef broth', ' meat extract'],
           link: 'https://en.wikipedia.org/wiki/Protein',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1316,
         },
         {
@@ -954,6 +1461,8 @@ export default {
           base: 'animal',
           origin: ['honey', ' peptone'],
           link: 'https://en.wikipedia.org/wiki/Carbon',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 3151,
         },
         {
@@ -961,6 +1470,8 @@ export default {
           base: 'animal',
           origin: ['peptone'],
           link: 'https://en.wikipedia.org/wiki/Buffer_solution',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 3770,
         },
         {
@@ -968,6 +1479,8 @@ export default {
           base: 'animal',
           origin: ['peptone'],
           link: 'https://en.wikipedia.org/wiki/Nitrogen',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 2435,
         },
         {
@@ -975,6 +1488,8 @@ export default {
           base: 'animal',
           origin: ['peptone'],
           link: 'https://en.wikipedia.org/wiki/Sulfur',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 4839,
         },
         {
@@ -982,6 +1497,8 @@ export default {
           base: 'animal',
           origin: ['beef extract', ' meat extract'],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1756,
         },
         {
@@ -1001,6 +1518,8 @@ export default {
             ' glycerine',
           ],
           link: 'https://en.wikipedia.org/wiki/Carbon',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 4268,
         },
         {
@@ -1008,6 +1527,8 @@ export default {
           base: 'plants',
           origin: ['vegetable peptone'],
           link: 'https://en.wikipedia.org/wiki/Protein',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1015,6 +1536,8 @@ export default {
           base: 'plants',
           origin: ['vegetable peptone'],
           link: 'https://en.wikipedia.org/wiki/Buffer_solution',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1022,6 +1545,8 @@ export default {
           base: 'plants',
           origin: ['vegetable peptone'],
           link: 'https://en.wikipedia.org/wiki/Nitrogen',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1029,6 +1554,8 @@ export default {
           base: 'plants',
           origin: ['vegetable peptone'],
           link: 'https://en.wikipedia.org/wiki/Sulfur',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1036,6 +1563,8 @@ export default {
           base: 'microbial',
           origin: ['yeast'],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1043,6 +1572,8 @@ export default {
           base: 'microbial',
           origin: ['agar'],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1056,6 +1587,8 @@ export default {
             ' calsium carbonate',
           ],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
         {
@@ -1067,6 +1600,8 @@ export default {
             ' sodium hydroxide (alkaline)',
           ],
           link: 'empty',
+          category: 'growth media',
+          categoryFunctions: ['various functions in microbiological lab work'],
           size: 1821,
         },
       ],

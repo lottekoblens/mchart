@@ -14,16 +14,20 @@ function App() {
     <div className='App'>
       <header>
         <h1>MORPHOLOGICAL CHART FOR FUTURE BUILDERS</h1>
+        <h3>
+          Toolkit to find substitutes and understand where ingredients can be
+          found to create new recipes
+        </h3>
       </header>
       <div className='flex'>
         <div className='chart'>
           <Map searchKeyword={search} />
-          <NewLegend />
         </div>
         <div className='searchField'>
           <TrySearch searchData={handlechangeSearch} />
         </div>
       </div>
+      <NewLegend />
     </div>
   );
 }

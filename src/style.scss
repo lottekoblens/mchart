@@ -4,7 +4,7 @@ $circle-color: #666565;
 $border-radius: 1em;
 
 body {
-  font-family: "Calibri", sans-serif;
+  font-family: 'Calibri', sans-serif;
 }
 
 header {
@@ -13,6 +13,7 @@ header {
   h1 {
     color: white;
     margin: 0;
+    font-weight: lighter;
   }
 }
 
@@ -47,6 +48,7 @@ header {
 #map {
   position: relative;
   top: 5em;
+  text-transform: capitalize;
 }
 
 #legend {
@@ -87,7 +89,7 @@ header {
 
     label {
       padding-right: 1em;
-      font-weight: bold;
+      font-weight: lighter;
     }
 
     input {
@@ -104,7 +106,7 @@ header {
       background-color: white;
       padding: 0.5em;
       color: $primary-color;
-      font-weight: bold;
+      font-weight: lighter;
     }
   }
 }
@@ -160,6 +162,9 @@ header {
   position: absolute;
   left: 71.5vw;
   top: 37vh;
+  h3 {
+    font-weight: lighter;
+  }
   #name,
   #origin,
   #functions,

@@ -80,13 +80,27 @@ function Map({ searchKeyword }) {
         d3.select('#name').text(`${d.data.name}`); // add name to div name
 
         if (d.data.origin != null) {
-          d3.select('#origin').text('Origin: ' + `${d.data.origin}`);
+          d3.select('#origin').text('Can be found in: ' + `${d.data.origin}`);
           d3.select('#base').text('Base: ' + `${d.data.base}`);
           // if the origin is not equal to null then put text in the divs
         } else {
           d3.select('#origin').text(' ');
           d3.select('#base').text(' ');
           // else there should be no text added to the divs
+        }
+
+        if (d.data.link === 'empty') {
+          d3.select('#link').text(' ');
+          // else there should be no text added to the div
+        } else if (d.data.link != null) {
+          d3.select('#link')
+            .text('More information: ' + `${d.data.link}`)
+            .on('click', function () {
+              window.open(d.data.link);
+            });
+          // if the link is not equal to null then put text in the divs
+        } else {
+          d3.select('#link').text(' ');
         }
 
         if (typeof d.data.functions === 'undefined') {
@@ -254,6 +268,7 @@ function Map({ searchKeyword }) {
           <h3 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h3>
           <p id='origin'></p>
           <p id='base'></p>
+          <p id='link'></p>
           <p id='functions'></p>
         </div>
         <div id='example'></div>

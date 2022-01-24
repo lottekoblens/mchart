@@ -2,6 +2,7 @@ $primary-color: #924c57;
 $linkchart-color: #555;
 $circle-color: #666565;
 $border-radius: 1em;
+$box-shadow: 5px 5px 10px #00000048;
 
 body {
   font-family: 'Calibri', sans-serif;
@@ -56,7 +57,7 @@ header {
   margin-top: 5em;
   position: absolute;
   left: 66.5vw;
-  top: 120vh;
+  top: 122vh;
 }
 
 .flex {
@@ -76,12 +77,14 @@ header {
 
 .searchField {
   margin: 10em;
+
   .search {
     background-color: $primary-color;
     padding: 1em;
     border-radius: $border-radius;
     color: white;
     min-width: 23vw;
+    box-shadow: $box-shadow;
 
     label {
       padding-right: 1em;
@@ -90,17 +93,18 @@ header {
 
     input {
       border: 1px solid white;
-      width: 14em;
+      width: 13em;
       margin-right: 1em;
       padding: 0.5em;
       border-radius: $border-radius;
       color: $primary-color;
     }
+
     button {
       border: none;
       border-radius: $border-radius;
       background-color: white;
-      padding: 0.5em;
+      padding: 0.7em;
       color: $primary-color;
       font-weight: lighter;
     }
@@ -124,6 +128,7 @@ header {
 }
 
 .infoitem {
+  box-shadow: $box-shadow;
   margin-top: 2em;
   width: 23.5vw;
   height: 50vh;
@@ -133,7 +138,7 @@ header {
   color: $primary-color;
   position: absolute;
   left: 71.5vw;
-  top: 75vh;
+  top: 77vh;
   padding: 0 0.8em;
   font-weight: lighter;
   text-align: left;
@@ -185,11 +190,27 @@ header {
     background-color: $primary-color;
     border-radius: $border-radius;
     border: none;
-    padding: 0.5em;
+    padding: 0.7em 0.5em;
     margin-left: 1em;
+    box-shadow: $box-shadow;
     a {
       color: white;
       text-decoration: none;
+      font-weight: lighter;
+      padding: 1em 0.5em;
     }
+  }
+}
+
+footer {
+  margin-top: 10em;
+  background-color: $primary-color;
+  width: 100vw;
+  margin-bottom: 0;
+  p {
+    text-align: center;
+    padding: 1em;
+    color: white;
+    margin: 0;
   }
 }

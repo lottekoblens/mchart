@@ -30,6 +30,9 @@ function App() {
         </div>
       </div>
       <NewLegend />
+      <footer>
+        <p>COPYRIGHT 2022 LOTTE KOBLENS, ZARA SCHRIEVER, LISA NIJMAN</p>
+      </footer>
     </div>
   );
 }

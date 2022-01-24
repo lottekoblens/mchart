@@ -9,6 +9,8 @@ For this project d3.js and React are used.
 * [Concept](https://github.com/lottekoblens/mchart#bulb-concept)
 * [Data](https://github.com/lottekoblens/mchart#file_folder-data)
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
+* [Live website](https://github.com/lottekoblens/mchart#live-website)
+* [Rubric]()
 * [Resources](https://github.com/lottekoblens/mchart#mag_right-resources)
 * [License](https://github.com/lottekoblens/mchart#page_with_curl-license)
 

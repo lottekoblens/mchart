@@ -10,7 +10,7 @@ For this project d3.js and React are used.
 * [Data](https://github.com/lottekoblens/mchart#file_folder-data)
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Live website](https://github.com/lottekoblens/mchart#bar_chart-live-website)
-* [Rubric](https://github.com/lottekoblens/mchart#rubric)
+* [Rubric](https://github.com/lottekoblens/mchart#clipboard-rubric)
 * [Resources](https://github.com/lottekoblens/mchart#mag_right-resources)
 * [License](https://github.com/lottekoblens/mchart#page_with_curl-license)
 

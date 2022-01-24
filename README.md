@@ -38,7 +38,7 @@ After that you can run the project by simply typing this in your terminal:
 
 ``` npm start ```
 
-## Live website
+## :bar_chart: Live website
 
 [Link to live website](https://mchart.vercel.app/)
 

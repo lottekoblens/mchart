@@ -42,7 +42,7 @@ After that you can run the project by simply typing this in your terminal:
 
 [Link to live website](https://mchart.vercel.app/)
 
-## Rubric
+## :clipboard: Rubric
 
 ![Rubric](https://github.com/lottekoblens/mchart/blob/master/public/rubric.png)
 

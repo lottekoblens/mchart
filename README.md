@@ -36,6 +36,10 @@ After that you can run the project by simply typing this in your terminal:
 
 ``` npm start ```
 
+## Live website
+
+[Link to live website](https://mchart.vercel.app/)
+
 ## :mag_right: Resources
 
 * pjn98n7l5q. (2020, 30 januari). CodeSandbox. Geraadpleegd op 3 januari 2022, van https://codesandbox.io/s/pjn98n7l5q?file=/src/Map.js:541–576

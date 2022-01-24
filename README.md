@@ -1,4 +1,4 @@
-# Morphological chart
+# :microscope: Morphological chart
 
 This is a project for a digital version of a morphological chart. It makes it easier to find an alternative ingredient. 
 

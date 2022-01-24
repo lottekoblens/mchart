@@ -1,6 +1,7 @@
 import Map from './components/Map';
 import NewLegend from './components/NewLegend';
 import TrySearch from './components/TrySearch';
+import Intro from './components/Intro';
 import { useState } from 'react';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           found to create new recipes
         </h3>
       </header>
+      <Intro />
       <div className='flex'>
         <div className='chart'>
           <Map searchKeyword={search} />

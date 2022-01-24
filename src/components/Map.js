@@ -80,12 +80,12 @@ function Map({ searchKeyword }) {
         d3.select('#name').text(`${d.data.name}`); // add name to div name
 
         if (d.data.origin != null) {
-          d3.select('#origin').text('Can be found in: ' + `${d.data.origin}`);
-          d3.select('#base').text('Base: ' + `${d.data.base}`);
+          d3.select('#heading-origin').text('Origin');
+          d3.select('#origin').text(`${d.data.origin}`);
           // if the origin is not equal to null then put text in the divs
         } else {
+          d3.select('#heading-origin').text(' ');
           d3.select('#origin').text(' ');
-          d3.select('#base').text(' ');
           // else there should be no text added to the divs
         }
 
@@ -94,7 +94,7 @@ function Map({ searchKeyword }) {
           // else there should be no text added to the div
         } else if (d.data.link != null) {
           d3.select('#link')
-            .text('More information: ' + `${d.data.link}`)
+            .text('More information')
             .on('click', function () {
               d3.select('#link').append('class', 'clickable-link');
               window.open(d.data.link);
@@ -105,39 +105,44 @@ function Map({ searchKeyword }) {
         }
 
         if (d.data.subcategory != null) {
+          d3.select('#heading-origin').text('Origin');
+          d3.select('#origin').text(`${d.data.origin}`);
           d3.select('#category').text(
             d.data.category + ' > ' + d.data.subcategory + ' > ' + d.data.base
           );
-          d3.select('#catFunctions').text(
-            'Functions: ' + d.data.categoryFunctions
-          );
+          d3.select('#heading-functions').text('Functions');
+          d3.select('#catFunctions').text(`${d.data.categoryFunctions}`);
+
+          console.log('tesr');
         } else if (d.data.category != null) {
           d3.select('#category').text(d.data.category + ' > ' + d.data.base);
-          d3.select('#catFunctions').text(
-            'Functions: ' + d.data.categoryFunctions
-          );
+          d3.select('#heading-functions').text('Functions');
+          d3.select('#catFunctions').text(d.data.categoryFunctions);
         } else {
           d3.select('#category').text(' ');
+          d3.select('#heading-functions').text(' ');
           d3.select('#catFunctions').text(' ');
         }
 
         if (typeof d.data.functions === 'undefined') {
           d3.select('#functions').text(' ');
+          console.log('deze');
         } else if (d.data.functions !== null) {
-          d3.select('#functions').text('Functions: ' + `${d.data.functions}`);
+          d3.select('#heading-functions').text('Functions');
+          d3.select('#functions').text(`${d.data.functions}`);
         } else if (
           typeof d.data.children !== 'undefined' &&
           d.data.children[0].functions !== null
         ) {
-          d3.select('#functions').text(
-            'Functions: ' + `${d.data.children[0].functions}`
-          );
+          d3.select('#heading-functions').text('Functions');
+          d3.select('#functions').text(`${d.data.children[0].functions}`);
         } else if (
           typeof d.data.children[0] !== 'undefined' &&
           d.data.children[0].children[0].functions !== null
         ) {
+          d3.select('#heading-functions').text('Functions');
           d3.select('#functions').text(
-            'Functions: ' + `${d.data.children[0].children[0].functions}`
+            `${d.data.children[0].children[0].functions}`
           );
         } else if (
           d.data.functions === 'undefined' ||
@@ -145,8 +150,10 @@ function Map({ searchKeyword }) {
           d.data.children[0].children[0] === 'undefined' ||
           d.data.functions === null
         ) {
+          d3.select('#heading-functions').text(' ');
           d3.select('#functions').text(' ');
         } else {
+          d3.select('#heading-functions').text(' ');
           d3.select('#functions').text(' ');
         } // because the data is structured in children and children within children the code above is necessary
         // the code checks if there are functions defined or not and when they are defined then the text will be displayed
@@ -283,16 +290,18 @@ function Map({ searchKeyword }) {
       ></svg>
       <div className='container'>
         <div className='infoitem'>
-          <h4 id='category'></h4>
+          <h3 id='category'></h3>
           <hr></hr>
-          <p id='catFunctions'></p>
-          <h2 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h2>
-          <p id='origin'></p>
-          <p id='link'></p>
 
+          <h3 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h3>
+          <h4 id='heading-origin'></h4>
+          <p id='origin'></p>
+          <h4 id='heading-functions'></h4>
+          <p id='catFunctions'></p>
           <p id='functions'></p>
+          <h4 id='link'></h4>
         </div>
-        <div id='example'></div>
+        {/* <div id='example'></div> */}
       </div>
     </>
   );

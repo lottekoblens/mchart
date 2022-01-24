@@ -14,8 +14,11 @@ header {
   h1,
   h3 {
     color: white;
-    margin: 0;
+    margin: 0 1em;
     font-weight: lighter;
+  }
+  h1 {
+    margin: 0 0.5em;
   }
 }
 
@@ -51,6 +54,7 @@ header {
   position: relative;
   top: 5em;
   text-transform: capitalize;
+  min-width: 70vw;
 }
 
 #legenda {
@@ -71,12 +75,8 @@ header {
   max-height: 90vh;
 }
 
-#map {
-  min-width: 70vw;
-}
-
 .searchField {
-  margin: 10em;
+  margin: 120em;
 
   .search {
     background-color: $primary-color;
@@ -130,6 +130,7 @@ header {
 .infoitem {
   box-shadow: $box-shadow;
   margin-top: 2em;
+  margin-right: 2em;
   width: 23.5vw;
   height: 50vh;
   background-color: white;
@@ -180,6 +181,7 @@ header {
   max-width: 50vw;
   padding: 0 1em;
   font-weight: lighter;
+  margin-left: 1em;
   h2 {
     color: $primary-color;
     border-bottom: 1px solid $primary-color;

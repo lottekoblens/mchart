@@ -70,4 +70,5 @@ After that you can run the project by simply typing this in your terminal:
 
 ## :page_with_curl: License
 
+Made by: Lotte Koblens, Zara Schriever & Lisa Nijman
 Author: Lotte Koblens, license by [MIT](https://github.com/lottekoblens/mchart/blob/master/LICENSE)

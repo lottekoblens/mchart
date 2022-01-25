@@ -6,6 +6,7 @@ This is a project for a digital version of a morphological chart. It's a toolkit
 
 * [Concept](https://github.com/lottekoblens/mchart#bulb-concept)
 * [Data](https://github.com/lottekoblens/mchart#file_folder-data)
+* [Libraries](https://github.com/lottekoblens/mchart#card_index-libraries)
 * [Installation](https://github.com/lottekoblens/mchart#wrench-installation)
 * [Live website](https://github.com/lottekoblens/mchart#bar_chart-live-website)
 * [Rubric](https://github.com/lottekoblens/mchart#clipboard-rubric)

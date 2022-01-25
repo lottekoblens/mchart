@@ -175,9 +175,18 @@ header {
     text-transform: uppercase;
   }
 
-  hr {
+  .visible {
     border: 0.01em solid lighten($primary-color, 20%);
     max-width: 20vw;
+  }
+  .invisible {
+    background: none;
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin: -1px 0;
   }
 
   #link {

@@ -103,16 +103,19 @@ function Map({ searchKeyword }) {
           );
           d3.select('#heading-functions').text('Functions');
           d3.select('#catFunctions').text(`${d.data.categoryFunctions}`);
+          d3.select('#hr').attr('class', 'visible');
           // when there is a subcategory run the code above
         } else if (d.data.category != null) {
           d3.select('#category').text(d.data.category + ' > ' + d.data.base);
           d3.select('#heading-functions').text('Functions');
           d3.select('#catFunctions').text(d.data.categoryFunctions);
+          d3.select('#hr').attr('class', 'visible');
           // when there is no subcategory but there is a category, this code will run
         } else {
           d3.select('#category').text(' ');
           d3.select('#heading-functions').text(' ');
           d3.select('#catFunctions').text(' ');
+          d3.select('#hr').attr('class', 'invisible');
         }
 
         if (typeof d.data.functions === 'undefined') {
@@ -295,7 +298,7 @@ function Map({ searchKeyword }) {
       <div className='container'>
         <div className='infoitem'>
           <h3 id='category'></h3>
-          <hr></hr>
+          <hr id='hr' className='invisible'></hr>
 
           <h3 id='name'>SELECT INGREDIENT FOR MORE INFORMATION</h3>
           <h4 id='heading-origin'></h4>

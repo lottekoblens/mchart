@@ -62,6 +62,7 @@ After that you can run the project by simply typing this in your terminal:
 * Laurens technical support
 * React. (z.d.). Rendering Elements –. Geraadpleegd op 18 januari 2022, van https://reactjs.org/docs/rendering-elements.html
 * d3.js if else regex string match to change style. (2015, 25 juli). Stack Overflow. Geraadpleegd op 19 januari 2022, van https://stackoverflow.com/questions/31626939/d3-js-if-else-regex-string-match-to-change-style
+* React. (z.d.-a). Refs and the DOM –. Geraadpleegd op 19 januari 2022, van https://reactjs.org/docs/refs-and-the-dom.html
 
 ## :page_with_curl: License
 

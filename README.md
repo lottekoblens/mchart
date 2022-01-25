@@ -1,6 +1,6 @@
 # :microscope: Morphological chart
 
-This is a project for a digital version of a morphological chart. It makes it easier to find an alternative ingredient. 
+This is a project for a digital version of a morphological chart. It's a toolkit to find substitutes and understand where ingredients can be found to create new recipes.
 
 For this project d3.js and React are used.
 

@@ -49,7 +49,7 @@ After that you can run the project by simply typing this in your terminal:
 
 ## :pencil: Wishlist
 
-* Make search functions more forgiving. So if the user makes a typo the correct result will still be highlighted.
+* Make search function more forgiving. So if the user makes a typo the correct result will still be highlighted.
 
 ## :mag_right: Resources
 

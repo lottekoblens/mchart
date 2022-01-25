@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import * as d3 from 'd3';
 import '../style.scss';
 import data from '../data';
@@ -14,11 +14,12 @@ function Map({ searchKeyword }) {
 
       let zoom = d3.zoom().on('zoom', () => {
         g.attr('transform', d3.event.transform);
-      }); // create the option to zoom in and out on chart
+      }); // create the option to zoom in and out on the chart
 
       svg = d3.select('#map').call(zoom);
 
       let transform = d3.zoomIdentity.translate(width / 2, height / 2 + 20);
+      // makes it possible to zoom in and out on the chart
 
       let g = svg.append('g').attr('transform', transform);
       // append g to the svg
@@ -31,10 +32,16 @@ function Map({ searchKeyword }) {
       let root = d3.hierarchy(data);
       // d3.hierarchy is a nested data structure representing the dendrogram (this makes it possible to use our data)
 
-      cluster(root);
+      cluster(root); // cluster(root) runs the cluster layout. Giving back an array of associated nodes to that root node
+
+      const project = (x, y) => {
+        let angle = ((x - 90) / 180) * Math.PI,
+          radius = y;
+        return [radius * Math.cos(angle), radius * Math.sin(angle)];
+      }; // gives elements the right angles
 
       g.selectAll('.link')
-        .data(root.descendants().slice(1))
+        .data(root.descendants().slice(1)) // returns an array of child nodes and makes the lines between the categories and ingredients
         .enter()
         .append('path')
         .attr('class', 'link')
@@ -52,24 +59,8 @@ function Map({ searchKeyword }) {
         });
       // add paths to all g
 
-      let node = g
-        .selectAll('.node')
-        .data(root.descendants())
-        .enter()
-        .append('g')
-        .attr('class', (d) => {
-          return 'node' + (d.children ? ' node--internal' : ' node--leaf');
-        })
-        .attr('transform', (d) => {
-          return 'translate(' + project(d.x, d.y) + ')';
-        })
-        .attr('data-label', (d) => {
-          return d.data.name;
-        })
-        .on('click', click); // when user clicks on text the function click will be called
-
-      function click(d) {
-        d3.select('#infoitem')
+      const click = (d) => {
+        d3.select('#infoitem') // select div with id infoitem
           .transition()
           .duration('50')
           .attr('opacity', '.85')
@@ -99,7 +90,7 @@ function Map({ searchKeyword }) {
               d3.select('#link').append('class', 'clickable-link');
               window.open(d.data.link);
             });
-          // if the link is not equal to null then put text in the divs
+          // if the link is not equal to null then put text in the divs and make the text 'more information' clickable
         } else {
           d3.select('#link').text(' ');
         }
@@ -112,12 +103,12 @@ function Map({ searchKeyword }) {
           );
           d3.select('#heading-functions').text('Functions');
           d3.select('#catFunctions').text(`${d.data.categoryFunctions}`);
-
-          console.log('tesr');
+          // when there is a subcategory run the code above
         } else if (d.data.category != null) {
           d3.select('#category').text(d.data.category + ' > ' + d.data.base);
           d3.select('#heading-functions').text('Functions');
           d3.select('#catFunctions').text(d.data.categoryFunctions);
+          // when there is no subcategory but there is a category, this code will run
         } else {
           d3.select('#category').text(' ');
           d3.select('#heading-functions').text(' ');
@@ -126,16 +117,18 @@ function Map({ searchKeyword }) {
 
         if (typeof d.data.functions === 'undefined') {
           d3.select('#functions').text(' ');
-          console.log('deze');
+          // when d.data.functions is undefined there should be no text displayed
         } else if (d.data.functions !== null) {
           d3.select('#heading-functions').text('Functions');
           d3.select('#functions').text(`${d.data.functions}`);
+          // when there are functions the text will be displayed
         } else if (
           typeof d.data.children !== 'undefined' &&
           d.data.children[0].functions !== null
         ) {
           d3.select('#heading-functions').text('Functions');
           d3.select('#functions').text(`${d.data.children[0].functions}`);
+          // when there are functions in a child the code above will run
         } else if (
           typeof d.data.children[0] !== 'undefined' &&
           d.data.children[0].children[0].functions !== null
@@ -144,6 +137,7 @@ function Map({ searchKeyword }) {
           d3.select('#functions').text(
             `${d.data.children[0].children[0].functions}`
           );
+          // when there are functions in a child within a child the code above will run
         } else if (
           d.data.functions === 'undefined' ||
           d.data.children[0].functions === 'undefined' ||
@@ -157,11 +151,27 @@ function Map({ searchKeyword }) {
           d3.select('#functions').text(' ');
         } // because the data is structured in children and children within children the code above is necessary
         // the code checks if there are functions defined or not and when they are defined then the text will be displayed
-      }
+      };
+
+      let node = g
+        .selectAll('.node')
+        .data(root.descendants()) // returns an array of child notes
+        .enter()
+        .append('g')
+        .attr('class', (d) => {
+          return 'node' + (d.children ? ' node--internal' : ' node--leaf'); // give children the class node--internal and non children the class of node--leaf
+        })
+        .attr('transform', (d) => {
+          return 'translate(' + project(d.x, d.y) + ')';
+        })
+        .attr('data-label', (d) => {
+          return d.data.name;
+        })
+        .on('click', click); // when user clicks on text the function click will be called
 
       node
-        .append('circle')
-        .attr('r', 3.5)
+        .append('circle') // make the circles
+        .attr('r', 3.5) // give circle a radius of 3.5
         .style('fill', function (d) {
           if (d.data.base === 'plants') {
             return '#6aa66c';
@@ -203,7 +213,7 @@ function Map({ searchKeyword }) {
             return 6;
           } else {
             return 3.5;
-          }
+          } // when circle belongs to category it's bigger then when it belongs to an ingredient
         });
 
       node
@@ -265,13 +275,7 @@ function Map({ searchKeyword }) {
           }); // for each element that matches the keyword the styling will change and the animation will be executed
         }
       };
-      highlightElement(searchKeyword);
-
-      function project(x, y) {
-        let angle = ((x - 90) / 180) * Math.PI,
-          radius = y;
-        return [radius * Math.cos(angle), radius * Math.sin(angle)];
-      } // gives elements the right angles
+      highlightElement(searchKeyword); // call function highlightElemtent and give it the parameter searchKeyword
     },
     [searchKeyword]
   );
@@ -301,7 +305,6 @@ function Map({ searchKeyword }) {
           <p id='functions'></p>
           <h4 id='link'></h4>
         </div>
-        {/* <div id='example'></div> */}
       </div>
     </>
   );

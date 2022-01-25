@@ -5,10 +5,10 @@ import Intro from './components/Intro';
 import { useState } from 'react';
 
 function App() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(''); // create a state for the search funtion
 
   const handlechangeSearch = (keyword) => {
-    setSearch(keyword); // set selection with the value of the radiobutton that is selected
+    setSearch(keyword); // set keyword from the input from TrySearch
   };
 
   return (
@@ -23,10 +23,12 @@ function App() {
       <Intro />
       <div className='flex'>
         <div className='chart'>
-          <Map searchKeyword={search} />
+          <Map searchKeyword={search} />{' '}
+          {/* call component Map and give it the keyword */}
         </div>
         <div className='searchField'>
           <TrySearch searchData={handlechangeSearch} />
+          {/* call the function handlechangeSearch with the data from searchData  */}
         </div>
       </div>
       <NewLegend />

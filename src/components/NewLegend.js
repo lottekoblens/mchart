@@ -8,9 +8,9 @@ const width = 1000;
 
 function NewLegend() {
   const ref = useD3((svg) => {
-    svg = d3.select('#legenda');
+    svg = d3.select('#legend');
 
-    // Handmade legend
+    // create legend with d3, consisting of circles with specific colors and text
     svg
       .append('circle')
       .attr('cx', -1100)
@@ -94,7 +94,7 @@ function NewLegend() {
   return (
     <>
       <svg
-        id='legenda'
+        id='legend'
         ref={ref}
         viewBox={`0 0 ${height} ${width}`}
         style={{

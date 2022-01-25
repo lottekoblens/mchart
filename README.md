@@ -58,6 +58,7 @@ After that you can run the project by simply typing this in your terminal:
 * D3 wiki. (z.d.). Cluster Layout - D3 wiki. Geraadpleegd op 3 januari 2022, van https://d3-wiki.readthedocs.io/zh_CN/master/Cluster-Layout/
 * Fill. (2019, 14 januari). d3.hierarchy. Observable. Geraadpleegd op 3 januari 2022, van https://observablehq.com/@d3/d3-hierarchy
 * D3 wiki. (z.d.-b). Cluster Layout - D3 wiki. Geraadpleegd op 3 januari 2022, van https://d3-wiki.readthedocs.io/zh_CN/master/Cluster-Layout/
+* GeeksforGeeks. (2020, 23 september). D3.js node.descendants() Function. Geraadpleegd op 3 januari 2022, van https://www.geeksforgeeks.org/d3-js-node-descendants-function/
 * Laurens technical support
 * React. (z.d.). Rendering Elements –. Geraadpleegd op 18 januari 2022, van https://reactjs.org/docs/rendering-elements.html
 * d3.js if else regex string match to change style. (2015, 25 juli). Stack Overflow. Geraadpleegd op 19 januari 2022, van https://stackoverflow.com/questions/31626939/d3-js-if-else-regex-string-match-to-change-style
